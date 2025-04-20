@@ -1,0 +1,127 @@
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main-container {
+      height: 100vh;
+      width: 100vw;
+      background-color: aqua;
+      background-image: url('images/background.jpg'); /* 🔥 Set full background */
+      background-size: cover;
+      background-position: center;
+      padding-top: 2.5rem;
+    }
+    .nav-section {
+      height: 2rem;
+      width: 100%;
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 7rem;
+      background: rgba(255, 255, 255, 0.7); /* semi-transparent nav bar */
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1E0E62;
+      background-image: url('images/Polygon 2.png'); /* 🔥 Background for only TOTC text */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+    .nav-items {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .nav-items p, .nav-items button {
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      height: calc(100vh - 7rem);
+      margin-top: 2rem;
+    }
+    .sub-container {
+      flex: 1;
+      padding-left: 7rem;
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    .front-img {
+      flex: 1;
+      padding-left: 7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .button-container {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .button-container img {
+      height: 3rem;
+    }
+    .desciption {
+      width: 50%;
+    }
+    button {
+      height: 5vh;
+      width: 6vw;
+      border-radius: 100px;
+      background-color: #1E0E62;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-container">
+  <div class="nav-section">
+    <div class="logo">TOTC</div>
+    <div class="nav-items">
+      <p>Home</p>
+      <p>Courses</p>
+      <p>Careers</p>
+      <p>Blog</p>
+      <p>About Us</p>
+      <button>Login</button>
+      <button>Sign Up</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sub-container">
+      <div class="desciption">
+        <h1>Studying Online is now much easier</h1>
+        <p style="margin-top: 1rem;">TOTC is an interesting platform that will teach you in a more interactive way.</p>
+      </div>
+
+      <div class="button-container">
+        <button>Join for free</button>
+        <img src="images/Group 4.png" alt="music play">
+        <p>Watch how it works</p>
+      </div>
+    </div>
+
+    <div class="front-img">
+      <img style="height: 70vh; width: 25vw; object-fit: cover;" src="images/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png" alt="front img">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

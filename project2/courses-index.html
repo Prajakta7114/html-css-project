@@ -1,0 +1,414 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+         body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a{
+            color: #5B5B5B;
+        }
+        :root{
+            scroll-behavior: smooth;
+        }
+        .course-main-container{
+            height: 90vh;
+            width: 100vw;
+            background-color: #d8e9fa;
+        }
+        .course-container{
+         display: flex;
+         height: 3.5rem;
+         width: 100vw;
+         background-color: white;
+         justify-content: center;
+         align-items: center;
+        }
+        .nav-courses{
+            height: 2rem;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            align-items: center;
+            padding: 1rem;
+            padding-left: 4.5rem;
+            padding-right: 4rem;
+         }
+         .nav-items{
+            display: flex;
+           gap: 50px;
+           align-items: center;
+           color:#5B5B5B;
+         }
+         .profile{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          color: black;
+         }
+         .headline{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 3.5rem;
+          padding-right: 4rem;
+          padding-top: 2rem;
+         }
+        .aws-container{
+          height: 59vh;
+          width: 100vw;
+          display: flex;
+          gap: 2rem;
+          justify-content: center;
+          padding-top: 1.5rem;
+
+        }
+        .three-aws-container{
+          height: 50vh;
+          width:28vw;
+          border-radius: 10px;
+          background-color: white;
+        }
+        .profile-aws{
+             display: flex;
+             gap: 1rem;
+             align-items: center;   
+             padding-top: 0.4rem;
+             padding-left: 1rem;
+        }
+        .line-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.6rem;
+        }
+        .three-aws-footer{
+            display: flex;
+            justify-content: end;
+            padding-right: 1rem;
+            color: #00000080;
+            font-size: small;
+        }
+        .arrow{
+            display: flex;
+            justify-content: end;
+            padding-right: 4.5rem;
+            gap: 1rem;
+        }
+        .category-container{
+            height: 120vh;
+            width: 100vw;
+        }
+        .item-container{
+            height: 45vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            box-sizing: border-box;
+            padding-top: 2rem;
+        }
+        .four-container{
+            height: 41vh;
+            width: 18vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px 2px #eeeff1;
+            padding-top: 0.5rem;
+         }
+        .icon-box{
+            height:8vh; 
+            width: 4vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fooot-course-cont{
+            height: 80vh;
+            width: 100vw;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            /* background-color: #5B5B5B; */
+        }
+        .fooot-course-sub-cont{
+            height: 45vh;
+            width: 86vw;
+            background-color: #252641;
+            margin-top: 4rem ;
+            border-radius: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 3rem;
+            align-items: center;
+        }
+        .start-login-button{
+            height: 6vh;
+            width: 12vw;
+            background-color: #49BBBD;
+            border-radius: 10px;
+            color: white;
+            margin-top: 3rem;
+            border: none;
+        }
+        .footer-section{
+            height: 53vh;
+            width: 100vw;
+            background-color: #252641;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 1rem;
+            padding: 2.5rem;
+        }
+        .bottom-container{
+          height: 10vh;
+          width: 27vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          color: white;
+          gap: 1rem;
+          
+        }
+        .totc{
+            height: 10vh;
+            padding-right: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .virtual{
+           height: 10vh;
+           width: 27vw;
+           padding-left: 2.5rem;
+           border-left: 1.5px solid white;
+           display: flex;
+           align-items: center;
+        }
+        .email-sub{
+           display: flex;
+           padding-top: 1rem;
+           gap: 1rem;
+        }
+        .mail{
+            height: 5vh;
+            width: 15vw;
+            color: #83839A;
+            background-color: #252641;
+            border-radius: 100px;
+            border: 1px solid #83839A;
+            text-align: start;
+            padding-left: 1rem;
+        }
+        .button-sub{
+            height: 5vh;
+            width: 9vw; 
+            color: white; 
+            background-color: #00CBB8;
+            border-radius:100px;
+            border: none;
+        }
+        .footer-nav{
+            display: flex;
+            gap: 1rem;
+            padding-top: 1rem;
+            color: #83839A;
+        }
+        .footer-nav-item{
+            padding-right: 1rem;
+            border-right: 1px solid #83839A;
+        }
+        </style>
+    </head>
+    <body>
+       <div class="course-main-container">
+         <div class="course-container">
+            <div class="nav-courses">
+            <img style="object-fit: cover; height: 8vh; " src="images/Group 235.png" alt="totc-logo">
+            <div class="nav-items" >
+                <a href="home-index.html">Home</a>
+                <p>Courses</p>
+                <p>Careers</p>
+                <p>Blog</p>
+                <a href="about-index.html"> About Us</a>
+                <div class="profile">
+                    <img style="height: 8vh;" src="images/Group 234.png" alt="profile">
+                    <p> Lina </p>
+                     <img src="images/.png" alt="arrow">
+            </div>
+        </div> 
+        </div>
+       </div> 
+           <div class="headline">
+             <h1 style="color: #252641; padding-left: 1rem;">Welcome back, ready for your next lesson?</h1>
+             <p style="color: #03a9ac; padding-right: 1rem;">View hisotry</p>
+           </div>
+
+        <div class="aws-container">
+        <div class="three-aws-container">
+            <img style="height: 32vh; width: 27.5vw; padding: 1rem;" src="images/Group 40.png" alt="first img">
+            <h4 style="padding-left: 1rem; color: #252641;">AWS Certified Solutions Architect</h4>
+        <div class="profile-aws">
+            <img style="height: 5vh;" src="images/Group 234.png" alt="profile">
+            <p> Lina </p>
+        </div>
+        <div class="line-img">
+            <img style="width: 25vw; " src="images/Group 273.png" alt="line">
+        </div>
+            <p class="three-aws-footer">Lesson 5 of 7</p>
+        </div>
+
+        <div class="three-aws-container">
+          <img style="height: 32vh; width: 27.5vw; padding: 1rem;" src="images/Group 41.png" alt="second img">
+          <h4 style="padding-left: 1rem; color: #252641;">AWS Certified Solutions Architect</h4>
+        <div class="profile-aws">
+            <img style="height: 5vh;" src="images/Group 234.png" alt="profile">
+            <p> Lina </p>
+        </div>
+         <div class="line-img">
+            <img style="width: 25vw; " src="images/Group 273.png" alt="line">
+        </div>
+            <p class="three-aws-footer">Lesson 5 of 7</p>
+        </div>
+
+        <div class="three-aws-container">
+            <img style="height: 32vh; width: 27.5vw; padding: 1rem;"src="images/Group 42.png" alt=" third img">
+            <h4 style="padding-left: 1rem; color: #252641;">AWS Certified Solutions Architect</h4>
+        <div class="profile-aws">
+            <img style="height: 5vh;" src="images/Group 234.png" alt="profile">
+             <p> Lina </p>
+        </div>
+        <div class="line-img">
+             <img style="width: 25vw; " src="images/Group 273.png" alt="line">
+        </div>
+            <p class="three-aws-footer">Lesson 5 of 7</p>
+        </div>
+            </div>
+
+            <div class="arrow">
+                <button style="background-color: #49BBBD80; border: none;  height: 5vh;width: 2.5vw;"> <img src="images/left-arrow.png" alt="left arrow"></button>
+                <button style="background-color: #49BBBD; border: none; height: 5vh;width: 2.5vw;"> <img src="images/right-arrow.png" alt="right arrow"></button>
+            </div>
+    </div>
+ 
+         <div class="category-container">
+           <h1 style="padding-top: 3rem; padding-left: 5rem; color: #252641;">Choice favourite course from top category</h1>
+           <div class="item-container">
+            <div class="four-container">
+                <div style="background-color: #49BBBD4D;" class="icon-box">
+                    <img style="  height:4vh;" src="images/design.png" alt="design">
+                </div>
+                <h3 style="padding-top: 1rem;">Design</h3>
+                <p style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+            </div>
+
+            <div class="four-container">
+               <div style="background-color: #5B72EE4D;" class="icon-box">
+                    <img style="  height:4vh;" src="images/devlopmen1.png" alt="devlopment1">
+                </div>
+                <h3 style="padding-top: 1rem;">Devlopment</h3>
+                <p style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+          </div>
+
+            <div class="four-container">
+                <div style="background-color: #9DCCFF4D;" class="icon-box">
+                    <img style="  height:4vh;" src="images/devlopment2.png" alt="devlopment2">
+                </div>
+                <h3 style="padding-top: 1rem;">Devlopment</h3>
+                <p style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+        </div>
+
+            <div class="four-container">
+                <div style="background-color: #00CBB84D;" class="icon-box">
+                    <img style="  height:4vh;" src="images/buisness.png" alt="buisness 1">
+                </div>
+                <h3 style="padding-top: 1rem;">Buisness</h3>
+                <p style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+        
+            </div>
+           </div>
+
+           <div class="item-container">
+            <div class="four-container">
+                <div style="background-color: #F48C064D;" class="icon-box">
+                    <img style="  height:4vh;" src="images/marketing.png" alt="marketing">
+                </div>
+                <h3 style="padding-top: 1rem;">Marketing</h3>
+                <p style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+            </div>
+
+            <div class="four-container">
+               <div style="background-color: #EE645B4D;" class="icon-box">
+                    <img style="  height:4vh;" src="images/photography.png" alt="photograpgy">
+                </div>
+                <h3 style="padding-top: 1rem;">Photography</h3>
+                <p style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+          </div>
+
+            <div class="four-container">
+                <div style="background-color: #2526414D;" class="icon-box">
+                    <img style="  height:4vh;" src="images/acting.png" alt="acting">
+                </div>
+                <h3 style="padding-top: 1rem;">Acting</h3>
+                <p style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+        </div>
+
+            <div class="four-container">
+                <div style="background-color: #00CBB84D;" class="icon-box">
+                    <img style="  height:4vh;" src="images/buisness.png" alt="buisness2">
+                </div>
+                <h3 style="padding-top: 1rem;">Buisness</h3>
+                <p style="padding-top: 1rem; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </div>
+           </div>
+        </div>
+         
+           <div class="fooot-course-cont">
+               <div class="fooot-course-sub-cont">
+                   <h2 >Online coaching lessons for remote learning.</h2>
+                   <p style="padding-top: 2rem; padding-left: 15rem; padding-right: 15rem; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                   <button class="start-login-button"> Start learning now</button>
+               </div>
+           </div>
+          
+           <div class="footer-section">
+            <div class="bottom-container">
+              <div class="totc">
+              <img src="images/Group 444.png" alt=" totc logo">
+             </div>
+             <div class="virtual">
+              <h3>Virtual Class for Zoom</h3>
+             </div>
+            </div>
+            <p style="color: #B2B3CF; padding-top: 3rem;">Subscribe to get our Newsletter</p>
+            <div class="email-sub">
+               <button class="mail">Your mail</button>
+               <button class="button-sub">Subscribe</button>
+            </div>
+            <div class="footer-nav">
+            <p class="footer-nav-item">Careers</p>
+            <p class="footer-nav-item">Privacy Policy</p>
+            <p>Terms & Condition</p>
+         </div>
+         <p style="color: 83839A; padding-top: 1rem;">© 2021 Class Technologies Inc. </p>
+     </div>      
+    </body>
+</html>

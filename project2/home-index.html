@@ -1,0 +1,337 @@
+<html>
+    <head>
+        <style>
+           *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           }
+           body{
+            font-family: Arial, Helvetica, sans-serif;
+           }
+           .main-container{
+            height: 80vh;
+            width: 100vw;
+            box-sizing: border-box;
+            background-color: #04b1a6;
+            padding-top: 2.5rem;
+            border-bottom-left-radius: 100% 20%;
+            border-bottom-right-radius: 100% 20%;
+            overflow: hidden;
+           }
+           .nav-section{
+            height: 2rem;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            align-items: center;
+            padding: 1rem;
+            padding-left: 6rem;
+            padding-right: 6rem;
+         }
+        
+         .nav-items{
+            display: flex;
+           gap: 50px;
+           align-items: center;
+           color: white;
+         }
+         .container{
+           width: 100vw;
+           box-sizing: border-box;
+           display: flex;
+           height: 60vh;
+           margin-top: 2rem;
+         }
+         .sub-container{
+          margin-left: 6rem;
+          box-sizing: border-box;
+          padding-top: 5rem; 
+        }
+         .front-img{
+            padding-left:7rem;
+        }
+         .login-button{
+          height: 5vh;
+          width: 7vw;
+          border-radius: 100px;
+          border: none;
+         }
+         .button-container{
+          width: 50vw;
+          height: 10vh;
+          display: flex;
+          padding-top: 2rem;
+          align-items: center;
+          box-sizing: border-box;
+
+         }
+         .desciption{
+          width: 50vw;
+          color: white;
+         }
+         .highlight{
+            color: rgb(252, 160, 2);
+         }
+         .join-button{
+            height: 5vh;
+            width: 10vw;
+            border-radius: 100px;
+            border: 1px solid #FFFFFF4D;;
+            color: white;
+            background-color: #FFFFFF4D;
+         }
+         .front-img{
+            display: flex;
+            align-items: center;
+         }
+         .big-container{
+            height: 110vh;
+            width: 100vw;
+            box-sizing: border-box;
+         }
+         .no-cont{
+            height: 20vh;
+            width: 100vw;
+            margin-top: 5rem;
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-sizing: border-box;
+         }
+         .numbers{
+            height:20vh;
+            text-align: center;
+            box-sizing: border-box;
+            color: #010514CC;
+         }
+         .num-highlight{
+            color:  #136CB5;
+            /* color:  #136CB5, #49BBBD; */
+            font-size: 3rem;
+        }
+        .cloud-highlight{
+            color: #00CBB8;
+        }
+        .three-container{
+            height: 57vh;
+            width: 100vw;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            gap: 3.5rem;
+            margin-top: 5rem;
+            padding-bottom: 5rem;
+            flex-wrap: wrap;
+        }
+        .box-container{
+            /* border: 1px solid #eeeff1; */
+            height: 40vh;
+            width: 20vw;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 4rem;
+            position: relative;
+            border-radius: 7px;
+            box-shadow: 0px 0px 7px 0px #eeeff1;
+            
+        }
+        .icon{
+          display: flex;
+          justify-content: start;
+          text-align: center;
+          align-items: center;
+          width: 100%;
+          position: absolute;
+          top: -40px; 
+          left: 35%;
+        }
+        .footer-section{
+            height: 53vh;
+            width: 100vw;
+            background-color: #252641;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 1rem;
+            padding: 2.5rem;
+        }
+        .bottom-container{
+          height: 10vh;
+          width: 27vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          color: white;
+          gap: 1rem;
+          
+        }
+        .totc{
+            height: 10vh;
+            padding-right: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .virtual{
+           height: 10vh;
+           width: 27vw;
+           padding-left: 2.5rem;
+           border-left: 1.5px solid white;
+           display: flex;
+           align-items: center;
+        }
+        .email-sub{
+           display: flex;
+           padding-top: 1rem;
+           gap: 1rem;
+        }
+        .mail{
+            height: 5vh;
+            width: 15vw;
+            color: #83839A;
+            background-color: #252641;
+            border-radius: 100px;
+            border: 1px solid #83839A;
+            text-align: start;
+            padding-left: 1rem;
+        }
+        .button-sub{
+            height: 5vh;
+            width: 9vw; 
+            color: white; 
+            background-color: #00CBB8;
+            border-radius:100px;
+            border: none;
+        }
+        .footer-nav{
+            display: flex;
+            gap: 1rem;
+            padding-top: 1rem;
+            color: #83839A;
+        }
+        .footer-nav-item{
+            padding-right: 1rem;
+            border-right: 1px solid #83839A;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a{
+            color: white;
+        }
+        :root{
+            scroll-behavior: smooth;
+        }
+        </style>
+    </head>
+    <body>
+
+    <div class="main-container">
+            <div class="nav-section">
+                <img src="images/Group 444.png" alt="logo-image">
+                <div class="nav-items" >
+                    <p>Home</p>
+                    <a href="courses-index.html">Courses</a>
+                    <p>Careers</p>
+                    <p>Blog</p>
+                    <a href="about-index.html">About Us</a>
+                    <button style="color: black; background-color: white;" class="login-button"> Login </button>
+                    <button style="background-color: #00000008;" class="login-button"> Sign Up </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sub-container">
+                <div class="desciption">
+                  <h1 style="margin-right: 13rem;"><span class="highlight">Studying</span> Online is now much easier</h1>
+                  <p style="padding-top: 1.5rem;margin-right: 19rem;">TOTC is an interesting platform that will teach you in more an interactive way</p>
+                </div>
+                <div class="button-container">
+                    <button class="join-button"> Join for free </button>
+                    <img style=" height: 13vh;" src="images/Group 4.png" alt="music play">
+                    <p>Watch how it works</p>
+                </div>
+            </div>
+            <div class="front-img">
+                <img style="height: 65vh; width: 30vw; object-fit: cover; background-repeat: no-repeat; padding-right: 10rem;" src="images/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png" alt="front img">
+            </div>
+        </div>
+    </div>
+
+   <div class="big-container">
+     <div class="no-cont">
+        <div class="numbers">
+           <h1><span class="num-highlight">15K+</span></h1>
+           <p>Students</p>
+        </div>
+        <div class="numbers">
+            <h1><span class="num-highlight">75%</span></h1>
+            <p>Total Success</p>
+         </div>
+         <div class="numbers">
+            <h1><span class="num-highlight">35</span></h1>
+            <p>Main questions</p>
+         </div>
+         <div class="numbers">
+            <h1><span class="num-highlight">26</span></h1>
+            <p>Cheif experts</p>
+           </div>
+         <div class="numbers">
+            <h1><span class="num-highlight">16</span></h1>
+            <p>years of experience</p>
+         </div>
+        </div>
+          <h1 style="color: #2F327D; text-align: center; padding-top: 3rem;">All-In-One <span class="cloud-highlight">Cloud Software.</span> </h1>
+          <p style="padding-left: 24rem; padding-right: 24rem; text-align: center; padding-top: 1rem; color: #696984;">TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
+          <div class="three-container">
+              <div class="box-container">
+                 <div class="icon">
+                <img style="height: 15vh;" src="images/Group 79.png" alt="first icon">
+                </div>
+                <h3 style="color: #2F327D;">Online Billing, Invoicing, & Contracts</h3>
+                 <p style=" padding-top: 1rem; color: #696984;">Simple and secure control of your organization's financial and legal transactions. Send customized invoices and contracts</p>
+              </div>
+              <div class="box-container">
+                <div class="icon">
+                    <img style="height: 15vh;" src="images/Group 80.png" alt="second icon">
+                    </div>
+                <h3 style="color: #2F327D;">Easy Scheduling & Attendance Tracking</h3>
+                <p style=" padding-top: 1rem; color: #696984;">Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance</p>
+              </div>
+              <div class="box-container">
+                <div class="icon">
+                    <img style="height: 15vh;" src="images/Group 81.png" alt="third icon">
+                    </div>
+                <h3 style="color: #2F327D;">Customer Tracking</h3>
+                <p style=" padding-top: 1.5rem; color: #696984;">Automate and track emails to individuals or groups. Skilline's built-in system helps organize your organization </p>
+              </div>
+          </div> 
+     </div>
+            <div class="footer-section">
+               <div class="bottom-container">
+                 <div class="totc">
+                 <img src="images/Group 444.png" alt=" totc logo">
+                </div>
+                <div class="virtual">
+                 <h3>Virtual Class for Zoom</h3>
+                </div>
+               </div>
+               <p style="color: #B2B3CF; padding-top: 3rem;">Subscribe to get our Newsletter</p>
+               <div class="email-sub">
+                  <button class="mail">Your mail</button>
+                  <button class="button-sub">Subscribe</button>
+               </div>
+               <div class="footer-nav">
+               <p class="footer-nav-item">Careers</p>
+               <p class="footer-nav-item">Privacy Policy</p>
+               <p>Terms & Condition</p>
+            </div>
+            <p style="color: 83839A; padding-top: 1rem;">© 2021 Class Technologies Inc. </p>
+        </div>      
+    </body>
+</html>
