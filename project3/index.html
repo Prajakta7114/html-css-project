@@ -1,0 +1,1125 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+           .main-comtainer{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: antiquewhite; */
+            box-sizing: border-box;
+           }
+           .two-section{
+            /* border: 2px solid red; */
+            display: flex;
+
+            justify-content: center;
+            z-index: 1;
+           }
+           .left-img{
+            background-color: #EFF8ED;
+            border-bottom-right-radius: 2.5rem;
+            /* margin-top: 1rem; */
+           }
+           .right-img{
+            background-color: #EFF8ED;
+            border-bottom-left-radius: 2.5rem;
+            /* margin-left: 50vw; */
+           }
+           .nav-section{
+            height: 1vh;
+            width: 100vw;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-between;
+           }
+           .header-section{
+            height: 10vh;
+            width: 100vw;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+           }
+           .login-join{
+            margin-left: 3rem;
+           }
+           .join-us-button{
+            height: 8vh;
+            width: 10vw;
+            background-color: #96BB7C;
+            border: 1px solid #96BB7C;
+            border-radius: 0.5rem;
+            color: white;
+            margin-left: 4rem;
+            margin-top: 0.5rem;
+           }
+           .brandename{
+            padding-left: 11rem;
+            padding-right: 4rem;
+            color: #252B42;
+           }
+           .menu{
+            padding-top: 0.5rem;
+            padding-right: 1rem;
+            color: #737373;
+           }
+           .login{
+            padding-left: 11rem;
+            padding-top: 0.5rem;
+            color: #96BB7C;
+           }
+           .text-section{
+            height: 72vh;
+            width: 100vw;
+            /* border: 2px solid mediumvioletred; */
+            /* padding-left: 25rem; */
+            padding-top: 8rem;
+            text-align: center;
+           }
+           .front-text{
+            color: #96BB7C;
+            padding-right: 4rem;
+           }
+           .front-heading{
+            color: #252B42;
+            padding-top: 1.5rem;
+            padding-right: 30rem;
+            padding-left: 28rem;
+            font-size: 2.5rem;
+           }
+           .front-passage{
+            color: #737373;
+            padding-top: 1.5rem;
+            padding-left: 28rem;
+            padding-right: 31rem;
+           }
+           .button-container{
+            height: 8vh;
+            width: 100vw;
+            /* border: 1px solid indigo; */
+            margin-top: 1.9rem;
+           }
+           .get-quote-now{
+            height: 7vh;
+            width: 14vw;
+            background-color: #96BB7C;
+            border: 2px solid #96BB7C;
+            border-radius: 0.5rem;
+            color: white;
+           }
+           .learn-more{
+            height: 7vh;
+            width: 14vw;
+            border: 1.5px solid #96BB7C;
+            border-radius: 0.5rem;
+            color: #96BB7C;
+            margin-left: 0.5rem;
+            background-color: transparent;
+           }
+            .main-comtainer-img-p3{
+                height: 67vh; 
+                width: 32vw; 
+                object-fit: cover; 
+                padding-left: 2rem;
+            }
+            .paragraph-section-h1{
+                padding-top: 1.5rem;
+                padding-right: 20rem;
+            }
+            .logo-container{
+                height: 35vh;
+                width: 100vw;
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4rem;
+            }
+            .p-quick{
+                color: #96BB7C;
+                padding-top: 4rem;
+                padding-left: 8rem;
+            }
+            .main-comtainer-passage-p2{
+                padding-left: 8rem; 
+                padding-right: 49rem; 
+                padding-top: 1rem;
+                color: #252B42;
+            }
+            .main-comtainer-heading-p2{
+                padding-left: 8rem; 
+                padding-top: 1rem;
+                color: #737373;
+            }
+            .four-container{
+                height: 48vh;
+                width: 100vw;
+                /* border: 2px solid black; */
+                margin-top: 4rem;
+                display: flex;
+                padding-left: 8rem;
+                gap: 2rem;
+            }
+            .sub-container{
+                height: 45vh;
+                width: 18vw;
+                /* box-shadow: 1px 1px 9px #737373; */
+                box-shadow: 0.8px 0.8px 15px   #dddcdc;
+                display: flex;
+                flex-direction: column;
+                padding-left: 2.4rem;
+                padding-right: 2rem;
+                padding-top: 1rem;
+                color: #737373;
+            }
+            .sub-container-Training{
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+                color: #252B42;
+            }
+            .line{
+                border-top: 2px solid red;
+                width: 4vw;
+                padding-top: 1.5rem;
+            }
+            .passage{
+                padding-top: 1rem;
+                padding-left: 1;
+                color: #737373;
+            }
+            .img-section{
+                height: 100vh;
+                width: 50vw;
+                /* border: 2px solid brown; */
+                display: flex;
+                justify-content: center;
+                padding-top: 4rem;
+            }
+           
+            .paragraph-section{
+                height: 100vh;
+                width: 50vw;
+                /* border: 2px solid brown; */
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                padding-left: 4rem;
+                columns: #252B42;
+            }
+            .paragraph-section-h1{
+                columns: #252B42;
+            }
+            .paragraph-section-passage{
+                padding-right: 17rem; 
+                padding-top: 2.5rem;
+                color: #737373;
+            }
+            .paragraph-section-learn-more{
+                color: #96BB7C; 
+                font-weight: bold; 
+                padding-top: 2rem;
+            }
+            .passage-line{
+                border-top: 6px solid #E74040;
+                width: 5vw;
+                padding-top: 2rem;
+                margin-top: 9rem;
+            }
+            .icon{
+                height: 11vh;
+                width: 5vw;
+                object-fit: cover;
+                margin-top: 1rem;
+            }
+            .arrow-next{
+                height: 1.5vh; 
+                width: 0.8vw;
+            }
+            .big-container{
+                height: 170vh;
+                width: 100vw;
+                background-color: #EFF8ED;
+                display: flex;
+                flex-direction: column;
+                padding-left: 8rem;
+                padding-right: 8rem;
+            }
+            .big-container-health{
+                color: #96BB7C; 
+                padding-top: 5rem;
+            }
+            .big-container-h1{
+                color: #252B42; 
+                padding-top: 1rem;
+            }
+            .big-container-passsage{
+                color: #737373; 
+                padding-top: 1rem; 
+                padding-right: 40rem;
+            }
+            .four-big-container{
+                height: 120vh;
+                width: 80vw;
+                /* border: 2px solid yellow; */
+                display: flex;
+                padding-left: 1px;
+                margin-top: 6rem;
+                gap: 2rem;
+            }
+            .one-container{
+                height: 108vh;
+                width: 18vw;
+                /* border: 2px solid black; */
+                background-color: white;
+                position: relative;
+                
+            }
+            .one-container-img{
+                object-fit: cover;
+                height: 50vh;
+                width: 18vw;
+        
+
+            }
+            .sale{
+                position: absolute; 
+                top: 1rem; 
+                z-index: 1;
+                left: 1rem;
+                object-fit: cover;
+            }
+            .icon-box{
+                position: absolute; 
+                z-index: 2;
+                top: 15rem;
+                object-fit: cover;
+                padding-left: 2.2rem;
+                
+                height: 7vh;
+                width: 15vw;
+                /* border: 1px solid black; */
+            }
+            .rate-img{
+                width: 3.5vw;
+                object-fit: cover;
+                padding-top: 1.5rem;
+                padding-left: 0.5rem;
+            }
+            .icon-box-img{
+                padding-left: 0.7rem;
+            }
+            .one-container-training{
+                color: #96BB7C; 
+                padding-left: 1.5rem;
+            }
+            .one-container-passage{
+                color: #737373; 
+                padding-top: 1rem; 
+                padding-left: 1.5rem; 
+                padding-right: 1.5rem;
+            }
+            .one-container-package{
+                color: #252B42; 
+                padding-top: 1rem; 
+                padding-left: 1.5rem;
+            }
+            .one-container-15sales{
+                color: #737373; 
+                padding-left: 1.5rem;
+                padding-top: 1rem;
+                
+            }
+            .download-icon{
+                margin-right: 1rem;
+            }
+            .rupees-box{
+                height: 4vh;
+                width: 10vw;
+                display: flex;
+                gap: 1rem;
+                padding-left: 1.5rem;
+                margin-top: 1rem;
+            }
+            .rupees{
+                color: #BDBDBD;
+            }
+            .rupees2{
+                color: #FFAB71;
+            }
+            .three-icon{
+                height: 4vh;
+                width: 20vw;
+                /* border: 1px solid black; */
+                /* padding-left: rem; */
+                padding-right: 1.8rem;
+                margin-top: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .three-icon-img{
+                height: 3vh;
+                width: 1.5vw;
+            }
+            .three-icon-paragraph{
+                color: #737373;
+            }
+            .one-container-button{
+                height: 7vh;
+                width: 13vw;
+                border: 1px solid black;
+                margin-top: 1rem;
+                margin-left: 1.5rem;
+                border-radius: 10rem;
+                border-color: #96BB7C;
+                color: #96BB7C;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .one-container-button-img{
+                margin-left: 0.5rem;
+            }
+            .double-container{
+                height: 200vh;
+                width: 100vw;
+                /* background-color: aqua;  */
+                padding-left: 8rem;
+            }
+            .practice{
+                color: #96BB7C;
+                padding-top: 7rem;
+            }
+            .education{
+                color: #252B42;
+                padding-top: 1rem;
+            }
+            .double-container-paraa{
+                color: #737373;
+                padding-top: 1rem;
+                padding-right: 49rem;
+            }
+            .three-container{
+                height: 150vh;
+                width: 80vw;
+                /* border: 2px solid black; */
+                margin-top: 5rem;
+                display: flex;
+                justify-content: space-between;
+            }
+            .free-container{
+                height: 142vh;
+                width: 25vw;
+                /* border: 2px solid red; */
+                background-color: white;
+                padding-left: 3rem;
+                padding-top: 3.5rem;
+                padding-right: 3rem;
+        /* box-shadow: 0.8px 0.8px 4px   #737373;78` */
+                box-shadow: 0.8px 0.8px 15px   #dddcdc;
+
+            }
+            .free{
+                padding-top: 2rem;
+                color: #252B42;
+            }
+            .free-container-paragraph{
+                padding-top: 2rem;
+                color: #737373;
+            }
+            .free-container-ruppes{
+                padding-top: 2rem;
+                color: #96BB7C;
+            }
+            .month{
+                padding-top: 0.5rem;
+                color: #8EC2F2;
+            }
+            .try-for-free{
+                height: 7vh;
+                width: 17vw;
+                background-color: #96BB7C;
+                color: white;
+                border-radius: 0.5rem;
+                border: none;
+                margin-bottom: 0.5rem;
+                margin-top: 2rem;
+            }
+            .check-circle{
+                display: flex;
+                align-items: center;
+                height: 7vh;
+                width: 17vw;
+                /* border: 1px solid yellow; */
+                margin-top: 0.8rem;
+            }
+            .check-circle-paragraph{
+                padding-left: 0.5rem;
+                color: #252B42;
+            }
+            .new{
+                position: relative;
+                bottom: 53rem;
+                left: 13.3rem;
+            }
+            .expert-container{
+                height: 135vh;
+                width: 100vw;
+                background-color: white;
+                padding-top: 10rem;
+                display: flex;
+                flex-direction: column;
+            }
+            .testimonials{
+                color: #96BB7C;
+                padding-left: 8rem;
+            }
+            .quality{
+                color: #252B42;
+                padding-top: 1rem;
+                padding-left: 8rem;
+            }
+            .expert-container-passage{
+                padding-top: 1rem;
+                color: #737373;
+                padding-right: 47rem;
+                padding-left: 8rem;
+            }
+            .profile-continer{
+                margin-top: 5rem;
+                height: 60vh;
+                width: 79vw;
+                margin-left: 8rem;
+                margin-right: 8rem;
+                display: flex;
+                justify-content: space-between;
+            }
+            .profile{
+                height: 60vh;
+                width: 34vw;
+            }
+            .profile-img{
+                border-radius: 100px;
+                object-fit: cover;
+                margin-left: 9rem;
+                margin-top: 1rem;
+            }
+            .profile-passage{
+                color: #737373;
+                padding-top: 1.5rem;
+                text-align: center;
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+            .star-container{
+                height: 5vh;
+                width: 15vw;
+                margin-top: 1rem;
+                margin-left: 7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .profile-name{
+                color: #252B42;
+                padding-left: 10rem;
+                padding-top: 1rem;
+            }
+            .designer{
+                color: #737373;
+                padding-left: 12rem;
+                padding-top: 1rem;
+            }
+            .subscribe-container{
+                height: 80vh;
+                width: 100vw;
+                background-color: white;
+            }
+            .newsletter{
+                padding-top: 8rem;
+                text-align: center;
+                color: #96BB7C;
+            }
+            .subscribe-container-heading{
+                padding-top: 1rem;
+                text-align: center;
+                color: #252B42;         
+            }
+            .subscribe-passage{
+                padding-top: 1rem;
+                text-align: center;
+                color: #737373;
+                padding-left: 27rem;
+                padding-right: 27rem;
+            }
+            .mail-section{
+                height: 8vh;
+                width: 50vw;
+                border: 1.5px solid #bcbbbb;
+                margin-top: 4rem;
+                margin-left: 20rem;
+                border-radius: 0.5rem;
+                display: flex;
+                justify-content: space-between;
+                background-color: #f6f6f6;
+
+            }
+            .email-paragraph{
+                color: #737373;
+                padding-top: 0.7rem;
+                padding-left: 1.3rem;
+            }
+            .email-subscrible{
+                border-left: 2px solid #96BB7C;
+                background-color: #96BB7C;
+                width: 9vw;
+                margin-left: 25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                /* border-radius: 0.3rem; */
+            }
+            .footer-section{
+                height: 50vh;                
+                width: 100vw;
+                /* background-color: rgb(200, 149, 248); */
+                padding-top: 3rem;
+            }
+            .three-section{
+                /* border: 2px solid black; */
+                height: 35vh;
+                width: 26vw;
+                display: flex;
+                justify-content: space-between;
+            }
+            .section{
+                margin-left: 8rem;
+                /* border: 2px solid yellow; */
+                height: 35vh;
+                width: 80vw;
+                display: flex;
+                justify-content: space-between;
+            }
+            .two-container{
+                /* border: 2px solid red; */
+                height: 35vh;
+                width: 13vw;
+                padding-left: 2rem;
+            }
+            .two-container-heading{
+                color: #252B42;
+                padding-bottom: 1rem;
+            }
+            .two-container-text{
+                color: #737373;
+                padding-top: 1rem;
+            }
+            .img-text-container{
+                /* border: 2px solid black; */
+                height: 35vh;
+                width: 26vw;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .get-in-touch{
+                padding-bottom: 1.5rem;
+                padding-left: 3rem;
+            }
+            .img-text{
+                height: 5vh;
+                width: 18vw;
+                /* border: 1px solid olivedrab; */
+                display: flex;
+                align-items: center;
+                gap: 0.7rem;
+                margin-left: 3rem;
+                margin-bottom: 1rem;
+                color: #737373;
+            }
+            .footer-nav-bar{
+                height: 9vh;
+                width: 100vw;
+                background-color:#fcf8f8;
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer-text{
+                height: 6vh;
+                width: 50vw;
+                margin-top: 0.5rem;
+                /* border: 1px solid green; */
+            }
+            .icon-container{
+                height: 6vh;
+                width: 50vw;
+                margin-top: 0.5rem;
+                /* border: 1px solid green; */
+            }
+            .footer-paragraph{
+                padding-left: 9.5rem;
+                padding-top: 0.5rem;
+                color: #737373;
+            }
+            .icon-container{
+                padding-left: 21rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        </style>
+        </head>
+        <body>
+           <div class="main-comtainer">
+            <div class="nav-section">
+                
+            
+                <div class="left-img" style="background-image: url(images\Rectangle 14.png); width: 9vw; height: 30vh; "></div>
+                <div class="right-img" style="background-image: url(images\right-rectangle.png); width: 45vw; height: 80vh;"></div>
+            </div>
+          <div class="header-section">
+            <h2 class="brandename">Brandname</h2>
+            <p class="menu">Home</p>
+            <p class="menu">Product</p>
+            <p class="menu">Pricing</p>
+            <p class="menu">Contact</p>
+           
+            <p class="login">Login</p>
+            <button class="join-us-button">JOIN US
+                <img style="margin-left: 0.5rem;" src="images\Vector (2).png" alt="">
+            </button>
+        </div>
+            <div class="text-section">
+                <p class="front-text">For Better Future</p>
+                <h1 class="front-heading">HIGH QUALITY COURSES </h1>
+                <p class="front-passage">Find the right instructor for you from over 10,000 teachers</p>
+                <div class="button-container">
+                    <button class="get-quote-now">Get Quote Now</button>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div> 
+        </div>
+        
+            
+                <div class="logo-container">
+                    <img style="height: 5vh;" src="images\col-md-2 sec-.png" alt="">
+                    <img style="height: 7vh;" src="images\col-md-2 sec- (1).png" alt="">
+                    <img style="height: 8vh;" src="images\col-md-2 sec- (2).png" alt="">
+                    <img style="height: 5vh;" src="images\col-md-2 sec- (3).png" alt="">
+                    <img style="height: 7vh;" src="images\col-md-2 sec- (4).png" alt="">
+                    <img style="height: 7vh;" src="images\col-md-2 sec- (5).png" alt="">
+                </div>
+           
+             
+            <div class="main-comtainer">
+                <h3 class="p-quick">Quick examination</h3>
+                <h1 class="main-comtainer-heading-p2">Approdable Packages</h1>
+                <p class="main-comtainer-passage-p2">Problems trying to resolve the conflict between 
+                    the two major realms of Classical physics: Newtonian mechanics </p>
+               <div class="four-container">
+                  <div class="sub-container">
+                    <img class="icon" src="images\training-school.png" alt="">
+                    <h3 class="sub-container-Training">Training Courses</h3>
+                    <div class="line"></div>
+                    <p>The gradual accumulation of information about </p>
+                  </div>
+
+                  <div class="sub-container">
+                    <img class="icon" src="images\book-knowledge.svg" alt="">
+                    <h3 class="sub-container-Training" >Training Courses</h3>
+                    <div class="line"></div>
+                    <p>The gradual accumulation of information about </p>
+                  </div>
+
+                  <div class="sub-container" style="background-color: #96BB7C; color: white; box-shadow: none;">
+                    <img class="icon" src="images\teaching.svg" alt="">
+                    <h3 class="sub-container-Training" >Expert instruction</h3>
+                    <div class="line" style="border-top: 2px solid white; "></div>
+                    <p>The gradual accumulation of information about </p>
+                  </div> 
+
+                  <div class="sub-container">
+                    <img class="icon" src="images\degree.svg" alt="">
+                    <h3 class="sub-container-Training">Lifetime access</h3>
+                    <div class="line"></div>
+                    <p class="passage">The gradual accumulation of information about </p>
+                  </div>
+               </div>     
+            </div>
+
+            <div class="main-comtainer" style="display: flex;">
+                <div class="img-section">
+                    <img class="main-comtainer-img-p3" src="images\thumb-concept-6.jpg" alt="">
+                </div>
+                <div class="paragraph-section">
+                    <div class="passage-line"></div>
+                    <h1 class="paragraph-section-h1">Most Popular Courses</h1>
+                    <p class="paragraph-section-passage">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                    <p class="paragraph-section-learn-more">Learn More
+                        <img class="arrow-next" src="images\icon arrow-next.png" alt="">
+                    </p>
+                </div>
+            </div>
+
+            <div class="big-container">
+                <h3 class="big-container-health" >Health Queries</h3>
+                <h1 class="big-container-h1" >Our Experts Teacher</h1>
+                <p class="big-container-passsage" >Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+               <div class="four-big-container">
+
+                   <div class="one-container">
+                    <img class="one-container-img" src="images\product-cover-133 sec-.png" alt=" img">
+                    <img class="sale" src="images/tag sec-.png" alt="tag">
+
+                 <div class="icon-box">
+                    <img src="images\like.png" alt="">
+                    <img class="icon-box-img" src="images\basket.png" alt="">
+                    <img class="icon-box-img" src="images\eye.png" alt="">
+                 </div>
+                   <p class="one-container-training">Training Courses
+                   <img class="rate-img" src="images\Frame 4 sec-.png" alt=""></p>
+                   <h3 class="one-container-package">Approdable Packages</h3>
+                   <p class="one-container-passage">We focus on ergonomics and meeting you....</p>
+                    <h4 class="one-container-15sales">
+                        <img class="download-icon" src="images\Frame sec-.png" alt="">15 Sales</h4>
+                          <div class="rupees-box">
+                           <p class="rupees">$16.48</p>
+                           <p class="rupees2">$6.48</p>
+                          </div>
+                       <div class="three-icon">
+                            <img class="three-icon-img" src="images\icon akar-icons-calendar.png" alt="">
+                            <p class="three-icon-paragraph">Pro...</p>
+                            <img class="three-icon-img" src="images\icon carbon-chart-area-smooth.png" alt="">
+                            <p class="three-icon-paragraph">64 Les...</p>
+                            <img class="three-icon-img" src="images\icon akar-icons-calendar.png" alt="">
+                            <p class="three-icon-paragraph">22hr..</p>
+                       </div>
+                       <button class="one-container-button"><h4>Learn More</h4>
+                        <img class="one-container-button-img" src="images\Vector.png" alt="">
+                       </button>
+                   </div>
+
+                   <div class="one-container">
+                    <img class="one-container-img" src="images\product-cover-131.png" alt=" img">
+                    <img class="sale" src="images/tag sec-.png" alt="tag">
+                 <div class="icon-box">
+                    <img src="images\like.png" alt="">
+                    <img class="icon-box-img" src="images\basket.png" alt="">
+                    <img class="icon-box-img" src="images\eye.png" alt="">
+                   </div>
+                   <p class="one-container-training">Training Courses
+                    <img class="rate-img" src="images\Frame 4 sec-.png" alt=""></p>
+                    <h3 class="one-container-package">Approdable Packages</h3>
+                    <p class="one-container-passage">We focus on ergonomics and meeting you....</p>
+                     <h4 class="one-container-15sales">
+                         <img class="download-icon" src="images\Frame sec-.png" alt="">15 Sales</h4>
+                           <div class="rupees-box">
+                            <p class="rupees">$16.48</p>
+                            <p class="rupees2">$6.48</p>
+                           </div>
+                        <div class="three-icon">
+                             <img class="three-icon-img" src="images\icon akar-icons-calendar.png" alt="">
+                             <p class="three-icon-paragraph">Pro...</p>
+                             <img class="three-icon-img" src="images\icon carbon-chart-area-smooth.png" alt="">
+                             <p class="three-icon-paragraph">64 Les...</p>
+                             <img class="three-icon-img" src="images\icon akar-icons-calendar.png" alt="">
+                             <p class="three-icon-paragraph">22hr..</p>
+                        </div>
+                        <button class="one-container-button"><h4>Learn More</h4>
+                         <img class="one-container-button-img" src="images\Vector.png" alt="">
+                        </button>
+                     </div>
+
+                   <div class="one-container">
+                    <img class="one-container-img" src="images\product-cover-130 sec-.png" alt=" img">
+                    <img class="sale" src="images/tag sec-.png" alt="tag">
+                 <div class="icon-box">
+                    <img src="images\like.png" alt="">
+                    <img class="icon-box-img" src="images\basket.png" alt="">
+                    <img class="icon-box-img" src="images\eye.png" alt="">
+                   </div>
+                   <p class="one-container-training">Training Courses
+                    <img class="rate-img" src="images\Frame 4 sec-.png" alt=""></p>
+                    <h3 class="one-container-package">Approdable Packages</h3>
+                    <p class="one-container-passage">We focus on ergonomics and meeting you....</p>
+                     <h4 class="one-container-15sales">
+                         <img class="download-icon" src="images\Frame sec-.png" alt="">15 Sales</h4>
+                           <div class="rupees-box">
+                            <p class="rupees">$16.48</p>
+                            <p class="rupees2">$6.48</p>
+                           </div>
+                        <div class="three-icon">
+                             <img class="three-icon-img" src="images\icon akar-icons-calendar.png" alt="">
+                             <p class="three-icon-paragraph">Pro...</p>
+                             <img class="three-icon-img" src="images\icon carbon-chart-area-smooth.png" alt="">
+                             <p class="three-icon-paragraph">64 Les...</p>
+                             <img class="three-icon-img" src="images\icon akar-icons-calendar.png" alt="">
+                             <p class="three-icon-paragraph">22hr..</p>
+                        </div>
+                        <button class="one-container-button"><h4>Learn More</h4>
+                         <img class="one-container-button-img" src="images\Vector.png" alt="">
+                        </button>
+                    </div>
+
+                   <div class="one-container">
+                    <img class="one-container-img" src="images\product-cover-132 sec-.png" alt=" img">
+                    <img class="sale" src="images/tag sec-.png" alt="tag">
+                 <div class="icon-box">
+                    <img src="images\like.png" alt="">
+                    <img class="icon-box-img" src="images\basket.png" alt="">
+                    <img class="icon-box-img" src="images\eye.png" alt="">
+                   </div> 
+                   <p class="one-container-training">Training Courses
+                    <img class="rate-img" src="images\Frame 4 sec-.png" alt=""></p>
+                    <h3 class="one-container-package">Approdable Packages</h3>
+                    <p class="one-container-passage">We focus on ergonomics and meeting you....</p>
+                     <h4 class="one-container-15sales">
+                         <img class="download-icon" src="images\Frame sec-.png" alt="">15 Sales</h4>
+                           <div class="rupees-box">
+                            <p class="rupees">$16.48</p>
+                            <p class="rupees2">$6.48</p>
+                           </div>
+                        <div class="three-icon">
+                             <img class="three-icon-img" src="images\icon akar-icons-calendar.png" alt="">
+                             <p class="three-icon-paragraph">Pro...</p>
+                             <img class="three-icon-img" src="images\icon carbon-chart-area-smooth.png" alt="">
+                             <p class="three-icon-paragraph">64 Les...</p>
+                             <img class="three-icon-img" src="images\icon akar-icons-calendar.png" alt="">
+                             <p class="three-icon-paragraph">22hr..</p>
+                        </div>
+                        <button class="one-container-button"><h4>Learn More</h4>
+                         <img class="one-container-button-img" src="images\Vector.png" alt="">
+                        </button>
+                    </div>
+               </div>     
+            </div>
+                
+            <div class="double-container">
+                <h3 class="practice">Practice Advice</h3>
+                <h2 class="education">Get Quality Education</h2>
+                <p class="double-container-paraa">Problems trying to resolve the conflict between 
+                    the two major realms of Classical physics: Newtonian mechanics </p>
+                
+                    <div class="three-container">
+                     <div class="free-container">
+                        <img src="images\circle sec-.png" alt="">
+                        <h2 class="free">FREE</h2>
+                        <h3 class="free-container-paragraph">Organize across all apps by hand</h3>
+                        <h1 class="free-container-ruppes">19$</h1>
+                        <h4 class="month">Per Month</h4>
+                        <p class="free-container-paragraph">Slate helps you see how many more days you need...</p>
+                        <button class="try-for-free">Try for free</button>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle (2).png" alt="">
+                            <p class="check-circle-paragraph">1GB  Cloud storage</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle (2).png" alt="">
+                            <p class="check-circle-paragraph">Email and community support</p>
+                        </div>
+                     </div>
+
+                     <div class="free-container">
+                        <img src="images\circle sec-.png" alt="">
+                        <h2 class="free">FREE</h2>
+                        <h3 class="free-container-paragraph">Organize across all apps by hand</h3>
+                        <h1 class="free-container-ruppes">19$</h1>
+                        <h4 class="month">Per Month</h4>
+                        <p class="free-container-paragraph">Slate helps you see how many more days you need...</p>
+                        <button class="try-for-free">Try for free</button>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle (2).png" alt="">
+                            <p class="check-circle-paragraph">1GB  Cloud storage</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle (2).png" alt="">
+                            <p class="check-circle-paragraph">Email and community support</p>
+                        </div>
+                        <img class="new" src="images\circle float off sec-.png" alt="">
+                    </div>
+                    
+                     <div class="free-container">
+                        <img src="images\circle sec-.png" alt="">
+                        <h2 class="free">FREE</h2>
+                        <h3 class="free-container-paragraph">Organize across all apps by hand</h3>
+                        <h1 class="free-container-ruppes">19$</h1>
+                        <h4 class="month">Per Month</h4>
+                        <p class="free-container-paragraph">Slate helps you see how many more days you need...</p>
+                        <button class="try-for-free">Try for free</button>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle.png" alt="">
+                            <p class="check-circle-paragraph">Unlimited product updates</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle (2).png" alt="">
+                            <p class="check-circle-paragraph">1GB  Cloud storage</p>
+                        </div>
+                        <div class="check-circle">
+                            <img src="images\circle (2).png" alt="">
+                            <p class="check-circle-paragraph">Email and community support</p>
+                        </div>
+                     </div>
+                </div>    
+            </div>
+
+            <div class="expert-container">
+                <h3 class="testimonials">Testimonials</h3>
+                <h1 class="quality">Get Quality Education</h1>
+                <p class="expert-container-passage">Problems trying to resolve the conflict between 
+                    the two major realms of Classical physics: Newtonian mechanics </p>
+                  <div class="profile-continer">
+                       <div class="profile">
+                            <img class="profile-img" src="images\profile1.png" alt="">
+                            <p class="profile-passage">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                                <div class="star-container">
+                                    <img src="images\filled star.png" alt="">
+                                    <img src="images\filled star.png" alt="">
+                                    <img src="images\filled star.png" alt="">
+                                    <img src="images\filled star.png" alt="">
+                                    <img src="images\unfilled-star.png" alt="">
+                                </div>  
+                               <h3 class="profile-name" >Regina Miles</h3> 
+                               <h5 class="designer">Designer</h5>      
+                        </div>
+                       <div class="profile">
+                        <img class="profile-img" src="images\profile2.png" alt="">
+                        <p class="profile-passage">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                            <div class="star-container">
+                                <img src="images\filled star.png" alt="">
+                                <img src="images\filled star.png" alt="">
+                                <img src="images\filled star.png" alt="">
+                                <img src="images\filled star.png" alt="">
+                                <img src="images\unfilled-star.png" alt="">
+                            </div>  
+                           <h3 class="profile-name" >Regina Miles</h3> 
+                           <h5 class="designer">Designer</h5>      
+                       </div>
+                  </div>  
+            </div>
+
+            <div class="subscribe-container">
+                <h3 class="newsletter">Newsletter</h3>
+                <h1 class="subscribe-container-heading">Our Experts Teacher</h1>
+                <p class="subscribe-passage">Problems trying to resolve the conflict between 
+                    the two major realms of Classical physics: Newtonian mechanics </p>
+                    <div class="mail-section">
+                         <p class="email-paragraph">Your Email</p>
+                         <p class="email-subscrible">Subscribe</p>
+                    </div>
+             </div>
+            
+            <div class="footer-section">
+                <div class="section">
+                <div class="three-section">
+                    <div class="two-container">
+                        <h4 class="two-container-heading">Company Info</h4>
+                        <p class="two-container-text">About Us</p>
+                        <p class="two-container-text">Carrier</p>
+                        <p class="two-container-text">We are hiring</p>
+                        <p class="two-container-text">Blog</p>
+                    </div>
+                    <div class="two-container">
+                        <h4 class="two-container-heading">Legal</h4>
+                        <p class="two-container-text">About Us</p>
+                        <p class="two-container-text">Carrier</p>
+                        <p class="two-container-text">We are hiring</p>
+                        <p class="two-container-text">Blog</p>
+                    </div>
+                </div>
+
+
+                <div class="three-section">
+                    <div class="two-container">
+                        <h4 class="two-container-heading">Features</h4>
+                        <p class="two-container-text">Business Marketing</p>
+                        <p class="two-container-text">User Analytic</p>
+                        <p class="two-container-text">Live Chat</p>
+                        <p class="two-container-text">Unlimited Support</p>
+                    </div>
+                    <div class="two-container">
+                        <h4 class="two-container-heading">Resources</h4>
+                        <p class="two-container-text">IOS & Android</p>
+                        <p class="two-container-text">Watch a Demo</p>
+                        <p class="two-container-text">Customers</p>
+                        <p class="two-container-text">API</p>
+                    </div>
+                </div>
+
+                <div class="three-section">
+                    <div class="img-text-container">
+                    <h4 class="get-in-touch">Get In Touch</h4>
+                    <div class="img-text">
+                        <img src="images\phone.png" alt="">
+                        <p>(480) 555-0103</p>
+                    </div>
+                    <div class="img-text">
+                        <img src="images\location.png" alt="">
+                        <p>4517 Washington Ave. Manchester,
+                            Kentucky 39495</p>
+                    </div>
+                    <div class="img-text">
+                        <img src="images\email.png" alt="">
+                        <p>debra.holt@example.com</p>
+                    </div>
+                </div>
+                 </div>
+              </div>
+              
+              <div class="footer-nav-bar">
+                <div class="footer-text">
+                    <p class="footer-paragraph">Made With Love By Figmaland All Right Reserved </p>
+                </div>
+                 <div class="icon-container">
+                    <img src="images\facebook.png" alt="">
+                    <img src="images\instagram.png" alt="">
+                    <img src="images\twitter.png" alt="">
+                 </div>
+              </div>
+
+            </div> 
+
+
+        </body>
+</html>
