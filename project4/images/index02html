@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        /* background-color: rgb(210, 71, 99); */
+        background-image: url('images/front-background-img.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .nav-bar {
+        height: 12vh;
+        width: 100vw;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 3rem;
+      }
+
+      .codex-logo {
+        height: 12vh;
+        width: 6vw;
+        object-fit: cover;
+      }
+
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 22vw;
+        margin-left: 9rem;
+      }
+
+      .icon {
+        padding-left: 2.5rem;
+      }
+
+      .nav-item {
+        padding-right: 3rem;
+      }
+
+      .background-img {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <img class="codex-logo" src="images/codex.png" alt="codex" />
+        <p class="nav-item" style="margin-left: 18rem;">Home</p>
+        <p class="nav-item">Shop</p>
+        <p class="nav-item">About</p>
+        <p class="nav-item">Contact</p>
+        <div class="icon-container">
+          <img class="icon" src="images/profile.png" alt="" />
+          <img class="icon" src="images/serach.png" alt="" />
+          <img class="icon" src="images/like.png" alt="" />
+          <img class="icon" src="images/buy.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

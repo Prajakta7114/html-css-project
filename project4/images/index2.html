@@ -1,0 +1,475 @@
+<html>
+     <head>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+             body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+           .main-container{
+            height: 120vh;
+            width: 100vw;
+            background-color: rgb(210, 71, 99);
+            background-image: url("images/front-background-img.png");
+            object-fit: cover;
+            background-repeat: no-repeat;
+           }
+           .nav-bar{
+            height: 12vh;
+            width: 100vw;
+            /* border: 2px solid black; */
+            background-color: white;
+            display: flex;
+            /* justify-content: center */
+            align-items: center;
+            padding-left: 3rem;
+           }
+           .codex-logo{
+            height: 12vh;
+            width: 6vw;
+            object-fit: cover;
+            /* padding-bottom: 0.2rem; */
+           }
+           .icon-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 5vh;
+            width: 22vw;
+            /* padding-left:1rem; */
+            margin-left: 9rem;
+           }
+           .icon{
+            padding-left: 2.5rem;
+           }
+           .nav-item{
+            padding-right: 3rem;
+           }
+           .background-img{
+            
+            width: 100vw;
+            height: 100vh;
+           }
+           .container{
+            height: 58vh;
+            width: 40vw;
+            /* border: 2px solid black; */
+            background-color: #FFF3E3;
+            margin-top: 9rem;
+            margin-left: 45rem;
+            padding-left: 2.3rem;
+           }
+           .new-arrival{
+            color: #333333;
+            padding-top: 4rem;
+            letter-spacing: 0.1rem;
+           }
+           .main-container-heading{
+            /* padding-left: 3rem; */
+            color: #B88E2F;
+            padding-right: 15rem;
+            padding-top: 1rem;
+           }
+           .main-container-passage{
+            padding-top: 1rem;
+            padding-right: 4rem;
+            color: #333333;
+           }
+           .buy-now{
+            height: 8vh;
+            width: 14vw;
+            color: white;
+            background-color: #B88E2F;
+            border: none;
+            text-align: center;
+            margin-top: 2rem;
+           }
+           .room-container{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: #FFF3E3; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           }
+           .room-container-headling{
+            color: #333333;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 2rem;
+           }
+           .room-container-passage{
+            color: #666666;
+            text-align: center;
+            padding-top: 1rem;
+           }
+           .room-container-holder{
+            height: 70vh;
+            width: 78vw;
+            margin-top: 4rem;
+            /* border: 2px solid black; */
+            display: flex;
+            /* margin-left: 6rem; */
+            /* margin-right: 5.5rem; */
+            justify-content: space-between;
+           }
+           .room-section{
+            height: 68vh;
+            width: 23vw;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           }
+           .room-images{
+            object-fit: cover;
+            height: 58vh;
+            width: 22.8vw;
+            border-radius: 0.7rem;
+           }
+           .section-name{
+            padding-top: 1.5rem;
+            color: #333333;
+           }
+           .our-product-container{
+            /* border: 2px solid black; */
+            height: 75vh;
+            width: 90vw;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+           }
+           .four-container{
+            height: 65vh;
+            width: 20vw;
+            /* border: 2px solid green; */
+            margin-top: 1.5rem;
+            background-color: #F4F5F7;
+            
+           }
+           .four-container-img{
+            object-fit: contain;
+            height:45vh;
+            width:20vw;
+            /* padding-bottom: 2rem; */
+           }
+           .rupees{
+            /* border: 1px solid red; */
+            display: flex;
+            height: 7vh;
+            width: 16vw;
+            margin-left: 1.5rem;
+            margin-top: 0.7rem;
+           }
+           .rupees-heading{
+            color: #3A3A3A;
+           }
+           .rupees-text{
+            color: #B0B0B0;
+            text-decoration: line-through;
+            padding-left: 0.7rem;
+           }
+           .four-container-heading{
+            color: #3A3A3A;
+            padding-top: 0.7rem;
+            padding-left: 1.5rem;
+           }
+           .four-container-text{
+            color: #898989;
+            padding-top: 0.7rem;
+            padding-left: 1.5rem;
+           }
+           .leviosa{
+            color: #3A3A3A;
+            padding-left: 1.5rem;padding-top: 1rem;
+           }
+           .show-more-button{
+            height: 7vh;
+            width: 15vw;
+            color: #B88E2F;
+            background-color: white;
+            margin-top: 0.5rem;
+            border: 2px solid #B88E2F;
+           }
+           .sub-container{
+            /* background-color: #FFF3E3; */
+            height: 110vh;
+            width: 100vw;
+            display: flex;
+           }
+           .color-container{
+            background-color: #FCF8F3;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            margin-top: 4rem;
+           }
+           .left-text{
+            height: 80vh;
+            width: 50vw;
+            /* border: 2px solid green; */
+            margin-top: 6rem;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+           }
+           .left-text-heading{
+            color: #3A3A3A;
+            padding-top: 8rem;
+            padding-left: 6rem;
+            padding-right: 15rem;
+           }
+           .left-text-passage{
+            color: #616161;
+            padding-top: 1rem;
+            padding-right: 16rem;
+            padding-left: 6rem;
+           }
+           .right-img{
+            height: 80vh;
+            width: 50vw;
+            /* border: 2px solid yellow; */
+            margin-top: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           .image{
+            height: 70vh;
+            width: 22vw;
+            object-fit: cover;
+            
+           }
+           .explore-more-button{
+            height: 7vh;
+            width: 13vw;
+            background-color: #B88E2F;
+            color: white;
+            border: 2px solid #B88E2F;
+            margin-right: 18rem;
+            margin-top: 2rem;
+           }
+           .container-box{
+             height: 100vh;
+            width: 100vw;
+           }
+           .footer-container{
+            height: 200vh;
+            width: 100vw;
+            /* background-color: rgb(244, 66, 102); */
+            /* display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; */
+           }
+           .big-container{
+            height: 59vh;
+            width: 85vw;
+            border-bottom: 2px solid #9F9F9F;
+            display:flex;
+            justify-content: space-between;
+            padding-top: 3rem;
+            margin-left: 6rem;
+           }
+           .footer-box-container{
+            height: 50vh;
+            width: 30vw;
+            margin-right: 1rem;
+            /* padding-right: 2rem; */
+           }
+           .small-box{
+            height: 50vh;
+            width: 14vw;
+            /* border: 2px solid black; */
+           }
+           .newsletter{
+            color: #000000;
+            padding-top: 2rem;
+            padding-left: 7rem;
+
+           }
+           .underline-box{
+            display: flex;
+            /* justify-content: center; */
+            align-items: start;
+            margin-left: 6rem;
+           }
+           .underline-1{
+            height: 4vh;
+            width: 15vw;
+            border-bottom: 2px solid black;
+            text-align: start;
+            margin-top: 2rem;
+            /* margin-left: 7rem; */
+            color: #9F9F9F;
+           }
+           .underline-2{
+            height: 4vh;
+            width: 7vw;
+            border-bottom: 2px solid black;
+            text-align: start;
+            margin-left: 1rem;
+            margin-top: 2rem;
+           }
+           .underline{
+            color:#9F9F9F;
+            text-align: center;
+           }
+           .heading{
+            color: #000000;
+            padding-top: 2rem;
+            padding-left: 1rem;
+           }
+           .passage{
+            color: #9F9F9F;
+            padding-left: 1rem;
+            padding-top: 2rem;
+           }
+           .all-right-reserve{
+            padding-left: 6rem;
+            padding-top: 2rem;
+           }
+        </style>
+     </head>
+     <body>
+        <div class="main-container">
+            <div class="nav-bar">
+                <img class="codex-logo" src="images\codex.png" alt="codex">
+                <p class="nav-item" style="margin-left: 18rem;">Home</p>
+                <p class="nav-item"> Shop</p>
+                <p class="nav-item"> About</p>
+                <p class="nav-item">Contact</p>
+                <div class="icon-container">
+                    <img class="icon" src="images\profile.png" alt="">
+                    <img class="icon" src="images\serach.png" alt="">
+                    <img class="icon" src="images\like.png" alt="">
+                    <img class="icon" src="images\buy.png" alt="">
+                </div>
+              </div>
+            <div class="container">
+                <h5 class="new-arrival">New Arrival</h5>
+                <h1 class="main-container-heading">Discover Our New Collection</h1>
+                <p class="main-container-passage" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                <button class="buy-now">BUY NOW</button>
+            </div>   
+        </div>
+
+        <div class="room-container">
+            <h2 class="room-container-headling">Browse The Range</h2>
+            <p class="room-container-passage">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="room-container-holder">
+                  <div class="room-section">
+                    <img class="room-images" src="images\dining.png" alt="">
+                       <h3 class="section-name">Dining</h3>
+                  </div>
+                  <div class="room-section">
+                   <img class="room-images" src="images\living.png" alt="">
+                       <h3 class="section-name" >Living</h3>
+                  </div>
+                  <div class="room-section">
+                    <img class="room-images" src="images\bedroom.png" alt="">
+                        <h3 class="section-name" >Bedroom</h3>
+                  </div>
+
+            </div>
+        </div>
+
+        <div class="room-container">
+            <h2 class="room-container-headling">Our Products</h2>
+            <div class="our-product-container">
+                <div class="four-container" style="position: relative;">
+    <img class="four-container-img" src="images/Syltherine.png" alt="">
+    <h3 class="four-container-heading">Syltherine</h3>
+    <p class="four-container-text">Stylish cafe chair</p>
+    <div class="rupees">
+      <h4 class="rupees-heading">Rp 2.500.000</h4>
+      <p class="rupees-text">Rp 3.500.000</p>
+    </div>
+    <img style="position: absolute; top: 10px; left: 10px;" src="images/-30%.png" alt="">
+</div>
+
+                <div class="four-container">
+                    <img class="four-container-img" src="images\Syltherine.png" alt="">
+                    <h3 class="four-container-heading">Leviosa</h3>
+                    <p class="four-container-text">Stylish Care Chair</p>
+                     <h4 class="leviosa">Rp 2.500.000</h4>
+                </div>
+
+                <div class="four-container">
+                    <img class="four-container-img" src="images\Lolito.png" alt="">
+                    <h3 class="four-container-heading">Lolito</h3>
+                    <p class="four-container-text">Luxury big sofa</p>
+                    <div class="rupees">
+                      <h4 class="rupees-heading">Rp 7.000.000</h4>
+                      <p class="rupees-text">Rp 14.000.000</p>
+                    </div>
+                </div>
+
+                <div class="four-container">
+                    <img class="four-container-img" src="images\Respira.png" alt="">
+                    <h3 class="four-container-heading">Respira</h3>
+                    <p class="four-container-text">Outdoor bar table and stool</p>
+                    <h4 class="leviosa">Rp 500.000</h4>
+                </div>
+            </div>
+
+              <button class="show-more-button">Show More</button>
+        </div>
+
+        <div class="sub-container">
+            <div class="color-container">
+            <div class="left-text">
+                <h1 class="left-text-heading">50+ Beautiful rooms inspiration</h1>
+                <p class="left-text-passage">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+                <button class="explore-more-button">Explore More</button>
+            </div>
+            <div class="right-img">
+                <img class="image" src="images\right-image.png" alt="">
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="container-box">
+            <div class="big-container">
+                <div class="footer-box-container">
+                    <h3 class="heading">Funiro.</h3>
+                    <p class="passage">400 University Drive Suite 200 Coral Gables,</p>
+                    <p class="passage">FL 33134 USA</p>
+             </div>
+
+                  <div class="footer-box-container" style="display: flex; padding-left: 3rem;">
+                    <div class="small-box">
+                         <p class="passage">Links</p>
+                         <h4 class="heading">Home</h4>
+                         <h4 class="heading">Shop</h4>
+                         <h4 class="heading">About</h4>
+                         <h4 class="heading">Contact</h4>
+                    </div>
+                    <div class="small-box">
+                          <p class="passage">Help</p>
+                          <h4 class="heading">Payment Options</h4>
+                          <h4 class="heading">Returns</h4>
+                          <h4 class="heading">Privacy Policies</h4>
+                    </div>
+
+                  </div>
+                    <div class="footer-box-container" style="width: 35vw; ">
+                        <h4 class="newsletter">Newsletter</h4>
+                        <div class="underline-box">
+                          <p class="underline-1">Enter Your Email Address</p>
+                          <p class="underline-2">SUBSCRIBE</p>
+                        </div>
+                    </div>
+             </div>
+             
+              <p class="all-right-reserve">2023 furino. All rights reverved</p></div>
+        </div>
+     </body>
+</html>
