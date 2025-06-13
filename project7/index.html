@@ -1,0 +1,1121 @@
+<html>
+    <head>
+        <title>PROJECT-07</title>
+        <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           }
+        body{
+            /* font-family: Arial, Helvetica, sans-serif; */
+        }
+        .main-container{
+            height: 110vh;
+            width: 100vw;
+            /* background-color: rgb(240, 182, 111); */
+            background-image: url('images/background-yellow-img.png');
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 98vh 43vw;
+        }
+        .nav-bar{
+            height: 15vh;
+            width: 100vw;
+            /* border: 0.1rem solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 3rem;
+        }
+        .logo-img{
+            height: 6vh;
+            object-fit: cover;
+            margin-left: 7rem;
+        }
+        .nav-items{
+            /* border: 0.1rem solid red; */
+            height: 10vh;
+            width: 70vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .sign-up-button{
+            height: 5.3vh;
+            width: 6vw;
+            border-radius: 0.2rem;
+            border: 0.1rem solid #212832;
+            background-color: #FFF1DA;
+        }
+        .arrow-down-en{
+            object-fit: cover;
+            padding-bottom: 0.1rem;
+        }
+        .text-img-container{
+            height: 90vh;
+            width: 100vw;
+            /* border: 0.1rem solid black; */
+            display: flex;
+        }
+        .text-section{
+            height: 85vh;
+            width: 50vw;
+            /* border: 0.1rem solid violet; */
+            padding-left: 8rem;
+            padding-top: 5rem;
+        }
+        .best-destination{
+            color: #DF6951;
+            padding-bottom: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .heading-main-container{
+            color: #181E4B;
+            font-size: 4rem;
+        }
+        .passage-main-container{
+            color: #5E6282;
+        }
+        .find-music-play-button{
+            /* border: 0.1rem solid red; */
+            height: 15vh;
+            width: 25vw;
+            display: flex;
+            margin-top: 0.2rem;
+            align-items: center;
+        }
+        .find-out-more-button{
+            height: 7vh;
+            width: 10vw;
+            border: 0.1rem solid #F1A501;
+            background-color: #F1A501;
+            border-radius: 0.4rem;
+            color: white;
+            /* margin-top: 0.8rem; */
+        }
+        .play-button{
+            object-fit: cover;
+            height: 15.5vh;
+            margin-left: 0.3rem;
+            margin-top: 1.3rem;
+        }
+        .img-section{
+            height: 90vh;
+            width: 50vw;
+            /* border: 0.1rem solid violet; */
+            display: flex;
+            align-items: start;
+            padding-top: 1rem;
+        }
+        .front-img{
+            height: 90vh;
+            width: 34.5vw;
+            object-fit: cover;
+            /* margin-right: 5rem; */
+            position: absolute;
+            z-index: 2;
+        }
+        .aeroplane{
+            object-fit: cover;
+            position: relative;
+            bottom: 0;
+            left: 2rem;
+        }
+        .aeroplane2{
+            object-fit: cover;
+            position: relative;
+            top: 3rem;
+            left: 17rem;
+            z-index: 1;
+        }
+        .category{
+            height: 88vh;
+            width: 100vw;
+            /* background-color: rgb(208, 208, 248); */
+            background-image: url('images/background-top-right.png');
+            background-position: right top;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        .category-word{
+            color: #5E6282;
+            text-align: center;
+            padding-top: 3rem;
+        }
+        .best-services{
+            color: #14183E;
+            font-size: 2.3rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            padding-top: 0.5rem;
+        }
+        .category-container{
+            height: 50vh;
+            width: 100vw;
+            /* border: 0.1rem solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+        .four-categories{
+            height: 45vh;
+            width: 80vw;
+            /* border: 0.1rem solid green; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .one-category{
+            height: 40vh;
+            width: 18vw;
+            border: 0.1rem solid rgb(245, 244, 244);
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2rem;
+            padding-right: 1.4rem;
+            border-radius: 0.7rem;
+        }
+        .one-category:hover{
+            box-shadow: 0.2rem 0.2rem 1rem rgb(224, 224, 224);
+        }
+        .category-img1{
+            object-fit: cover;
+            height: 12vh;
+            width: 6.5vw;
+            margin-top: 1rem;
+            margin-left: 2.5rem;
+        }
+        .category-img2{
+            object-fit: cover;
+            height: 14vh;
+            width: 9vw;
+            margin-top: 0.5rem;
+            margin-left: 1.8rem;
+        }
+        .category-img3{
+            object-fit: cover;
+            height: 10vh;
+            width: 4vw;
+            margin-top: 1rem;
+            margin-left: 3.2rem;
+        }
+        .category-img4{
+            object-fit: cover;
+            height: 8vh;
+            width: 4.5vw;
+            margin-top: 1rem;
+            margin-left: 2.7rem;
+        }
+        .category-heading{
+            color: #1E1D4C;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+        .category-passage{
+            color: #5E6282;
+            text-align: center;
+        }
+        .destinations{
+            height: 110vh;
+            width: 100vw;
+            /* background-color: rgb(238, 247, 222); */
+        }
+        .destinations-container{
+            height: 90vh;
+            width: 100vw;
+            /* border: 0.1rem solid black; */
+            /* display: flex; */
+            justify-content: center;
+            padding-left: 9rem;
+            margin-top: 1.5rem;
+        }
+        .three-destinations{
+            height: 80vh;
+            width: 76vw;
+            /* border: 0.1rem solid violet; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .one-destination{
+            height: 70vh;
+            width: 22vw;
+            /* border: 0.1rem solid black; */
+             border-radius: 1rem;
+            box-shadow: 0.2rem 0.2rem 1rem rgb(214, 214, 214);
+        }
+        .destination-img{
+            height: 97vh;
+            width: 22vw;
+            object-fit: cover;
+            position: absolute;
+        }
+        .destination-box{
+            height: 20vh;
+            width: 22vw;
+            /* border: 0.2rem solid black; */
+            position: relative;
+            top: 18.5rem;
+            left:0;
+            background-color: white;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            padding-top: 1.5rem;
+        }
+        .destination-text{
+            height: 5vh;
+            width: 19vw;
+            /* border: 0.1rem solid yellow; */
+            display: flex;
+            justify-content: space-between;
+            margin-left: 1rem;
+            color: #5E6282;
+        }
+        .img-trip{
+            height: 5vh;
+            width: 18vw;
+            /* border: 0.1rem solid green; */
+            display: flex;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .trip{
+            color: #5E6282;
+            padding-left: 1rem;
+        }
+        .book-your-next-trip{
+            color: #14183E;
+            font-size: 2.5rem;
+        }
+        .book-trip{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: #DF6951; */
+            display: flex;
+        }
+        .text-book-trip{
+            height: 100vh;
+            width: 50vw;
+            /* border: 0.1rem solid green; */
+            padding-left: 8rem;
+            margin-top: 5rem;
+        }
+        .steps{
+            height: 70vh;
+            width: 35vw;
+            /* border: 0.1rem solid black; */
+        }
+        .each-step{
+            /* border: 0.1rem solid blue; */
+            height: 20vh;
+            width: 30vw;
+            display: flex;
+            align-items: center;
+        }
+        .stages-img{
+            height: 9.5vh;
+            width: 4.3vw;
+            object-fit: cover;
+        }
+        .paragraph-each-step{
+            height: 20vh;
+            width: 25vw;
+            /* border: 0.1rem solid yellow; */
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .stages-heading{
+            color: #5E6282;
+            /* padding-top: 1rem; */
+            padding-bottom: 0.5rem;
+        }
+        .stages-passage{
+            color: #5E6282;
+        }
+        .img-book-trip{
+            height: 100vh;
+            width: 50vw;
+            /* border: 0.1rem solid black; */
+            padding-left: 1rem;
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+
+        }
+        .trip-img{
+            height: 75vh;
+            width: 30vw;
+            border: 0.1rem solid rgb(237, 236, 236);
+            border-radius: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1.5rem;
+            position: absolute;
+            /* box-shadow: 0rem 2rem 4rem rgba(128, 0, 128, 0.5); */
+            /* box-shadow: 2rem -2rem 10px 1px rgba(128, 0, 128, 0.4); */
+            box-shadow: 3rem -5rem 5rem 0.1rem rgba(0, 110, 255, 0.2); /* soft blue shadow */
+
+        }
+        .trip-imges{
+            height: 30vh;
+            width: 26vw;
+            /* object-fit: cover; */
+        }
+        .text-trip-box{
+            height: 35vh;
+            width: 26vw;
+            /* border: 0.1rem solid white; */
+            padding-top: 1.5rem;
+            color: #080809;
+        }
+        .date-robin{
+            display: flex;
+            height: 5vh;
+            width: 26vw;
+            /* border: 0.1rem solid violet; */
+            margin-top: 1rem;
+             color: #84829A;
+        }
+        .date{
+            height: 3vh;
+            width: 7.5vw;
+            border-right: 0.1rem solid #84829A;
+            color: #84829A;
+            margin-right: 1rem;
+        }
+        .leaf-map-send-icon{
+            height: 9vh;
+            width: 15vw;
+            /* border: 0.1rem solid firebrick; */
+            margin-top: 1rem;
+        }
+        .trip-icons{
+            height: 7vh;
+            width: 3.2vw;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        .building-people{
+            height: 4vh;
+            width: 26vw;
+            /* border: 0.1rem solid green; */
+            display: flex;
+            color: #84829A;
+            margin-top: 1rem;
+        }
+        .building{
+            margin-right: 1rem;
+        }
+        .blue-heart{
+            margin-left: 9rem;
+        }
+        .trip-to-rome{
+            height: 22vh;
+            width: 20vw;
+            /* border: 0.1rem solid yellow; */
+            background-color: white;
+            display: flex;
+            position: relative;
+            top: 5.5rem;
+            left: 15rem;
+            padding-left: 1.3rem;
+            border-radius: 0.5rem;
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(227, 227, 227);
+        }
+        .trip-to-rome-img{
+            object-fit: cover;
+            height: 8vh;
+            width: 4vw;
+            border-radius: 2.5rem;
+            margin-top: 1.3rem;
+        }
+        .trip-to-rome-text{
+            height: 20vh;
+            width: 14vw;
+            /* border: 0.1rem solid green; */
+            padding-top: 1.2rem;
+            padding-left: 1rem;
+            color: #080809;
+        }
+        .ongoing{
+            color: #84829A;
+        }
+        .trip-text{
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .line-img{
+            object-fit: cover;
+            padding-top: 0.5rem;
+        }
+        .testimonials{
+            height: 95vh;
+            width: 100vw;
+            /* background-color: cornflowerblue; */
+            display: flex;
+        }
+        .two-testimonial{
+            height: 70vh;
+            width: 50vw;
+            /* border: 0.1rem solid green; */
+            margin-top: 6rem;
+
+        }
+        .testimonial-word{
+            color: #5E6282;
+            padding-top: 3rem;
+            padding-left: 8rem;
+            padding-bottom: 1rem;
+        }
+        .testimonial-headline{
+            color: #14183E;
+            font-size: 2.7rem;
+            padding-left: 8rem;
+        }
+        .three-dots{
+            margin-left: 8rem;
+            margin-top: 4rem;
+            object-fit: cover;
+        }
+        .testimonial-text{
+            /* border: 0.1rem solid yellow; */
+            height: 30vh;
+            width: 30vw;
+            position: absolute;
+        }
+        .ceo{
+            /* border: 0.1rem solid yellow; */
+            height: 30vh;
+            width: 30vw;
+            margin-top: 9rem;
+            margin-left: 2.5rem;
+            justify-content: end;
+            align-items: start;
+            display: flex;
+            flex-direction: column;
+            background-color: #F7F7F7;
+            border-radius: 0.5rem;
+        }
+        .testimonial-back{
+            /* border: 0.1rem solid red; */
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(212, 211, 211);
+            height: 27vh;
+            width: 30vw;
+            position: relative;
+            bottom: 14.7rem;
+            right: 0;
+            color: #5E6282;
+            border-radius: 0.5rem;
+            background-color: white;
+        }
+        .testimonial-back-passage{
+            padding-top: 1rem; 
+            padding-left: 1.3rem;
+        }
+        .testimonial-back-passage-1{
+            padding-left: 1.3rem;
+        }
+        .testimonial-back-passage-2{
+            padding-left: 1.3rem;
+            padding-bottom: 1rem;
+        }
+        .mike-taylor{
+            color: #5E6282;
+            padding-left: 1.3rem;
+            padding-bottom: 0.5rem;
+        }
+        .chirs-thomas{
+            color: #5E6282;
+            padding-left: 1.3rem;
+            padding-bottom: 0.5rem;
+        }
+        .ceo-of-red-button{
+            color: #5E6282;
+            padding-left: 1.3rem;
+            padding-bottom: 1.5rem;
+        }
+        .ceo-img{
+            object-fit: cover;
+            position: relative;
+            bottom: 28rem;
+            left: -2rem;
+        }
+        .compnaies{
+            height: 13vh;
+            width: 100vw;
+            /* border: 0.1rem solid rgb(237, 9, 237); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .company-container-1{
+            height: 10vh;
+            width: 79vw;
+            /* border: 0.1rem solid #F1A501; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .jetstar{
+            height: 13vh;
+            width: 8vw;
+            object-fit: cover;
+            /* border: 0.1rem solid black; */
+        }
+        .jetstar-container{
+            /* border: 0.1rem solid red; */
+            height: 10vh;
+            width: 12vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .jetstar-container:hover{
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(217, 217, 217);
+            border-radius: 0.5rem;
+        }
+        .axon{
+            height: 5vh;
+            width: 8vw;
+            object-fit: cover;
+        }
+        .axon-container{
+            /* border: 0.1rem solid red; */
+            height: 10vh;
+            width: 12vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .axon-container:hover{
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(217, 217, 217);
+            border-radius: 0.5rem;
+        }
+        .expedia{
+            height: 22vh;
+            width: 16vw;
+            object-fit: cover;
+            margin-top: 4rem;
+        }
+        .expedia-container{
+            /* border: 0.1rem solid red; */
+            height: 10vh;
+            width: 12vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .expedia-container:hover{
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(217, 217, 217);
+            border-radius: 0.5rem;
+        }
+        .quntas{
+            height: 3vh;
+            width: 7vw;
+            object-fit: cover;
+        }
+        .quntas-container{
+            /* border: 0.1rem solid red; */
+            height: 10vh;
+            width: 12vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .quntas-container:hover{
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(217, 217, 217);
+            border-radius: 0.5rem;
+        }
+        .alitailia{
+            height: 3.1vh;
+            width: 6.5vw;
+            object-fit: cover;
+        }
+        .alitailia-container{
+            /* border: 0.1rem solid red; */
+            height: 10vh;
+            width: 12vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .alitailia-container:hover{
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(217, 217, 217);
+            border-radius: 0.5rem;
+        }
+        .subscribe{
+            height: 75vh;
+            width: 100vw;
+            /* background-color: darkkhaki; */
+            display: flex;
+            justify-content: center;
+            padding-top: 5rem;
+            background-image: url('images/bottom-right-design.png');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            object-fit: cover;
+        }
+        .subscribe-container{
+            height: 50vh;
+            width: 85vw;
+            /* border: 0.1rem solid yellow; */
+            border-top-left-radius: 6rem;
+            padding-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #DFD7F9;
+            border-bottom-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            position: absolute;
+            background-image: url('images/subscribe-background-1.png'), url('images/subscribe-background-2.png');
+            background-position: left bottom, right top;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        .subscribe-heading{
+            text-align: center;
+            color: #5E6282;
+        }
+        .subscribe-container-button{
+            height: 9vh;
+            width: 40vw;
+            /* border: 0.1rem solid blue; */
+            margin-top: 3.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .your-mail{
+            height: 7.5vh;
+            width: 27vw;
+            border: 0.1rem solid white;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: start;
+            color: #39425D;
+            align-items: center;
+            background-color: white;
+        }
+        .mail-img{
+            height: 2.2vh;
+            width: 1.2vw;
+            object-fit: cover;
+            margin-left: 1.3rem;
+            margin-right: 0.8rem;
+        }
+        .subscribe-button{
+            height: 7.5vh;
+            width: 11vw;
+            background: linear-gradient(to top , #FF7D68, #FF946D);
+            /* border: 0.1rem solid #FF7D68; */
+            border-radius: 0.5rem;
+            border: 0.1rem ;
+            color: white;
+        }
+        .send-arrow-circle{
+            height: 7.5vh;
+            width: 3.5vw;
+            object-fit: cover;
+            position: relative;
+            top: -1rem;
+            left: 33.6rem;
+        }
+        .footer{
+            height: 65vh;
+            width: 100vw;
+            /* background-color: #8A79DF; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding-top: 5rem; */
+            flex-direction: column;
+        }
+        .footer-container{
+            height: 40vh;
+            width: 80vw;
+            /* border: 0.1rem solid black; */
+            justify-content: space-between;
+            display: flex;
+        }
+        .jadoo-conatiner{
+            height: 30vh;
+            width: 19vw;
+            /* border: 0.1rem solid brown; */
+        }
+        .jadoo{
+            color: #181E4B;
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+        .jadoo-passage{
+            color: #5E6282;
+        }
+        .company-contact-more{
+            height: 30vh;
+            width: 35vw;
+            /* border: 0.1rem solid firebrick; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .company-container{
+            height: 25vh;
+            width: 11vw;
+            /* border: 0.1rem solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+        }
+        .company-word{
+            color: #080809;
+        }
+        .about-word{
+            color: #5E6282;
+            font-size: 1.3rem;
+        }
+        .discover{
+            height: 25vh;
+            width: 18vw;
+            /* border: 0.1rem solid white; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .discover-word{
+            color: #5E6282;
+            font-size: 1.7rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.7rem;
+        }
+        .facebook-insata-twitter{
+            height: 10vh;
+            width: 13vw;
+            /* border: 0.1rem solid pink; */
+            display: flex;
+
+            justify-content: space-between;
+        }
+        .facebook-icon{
+            height: 10vh;
+            width: 3.5vw;
+            object-fit: cover;
+        }
+        .app-container{
+            height: 10vh;
+            width: 19vw;
+            /* border: 0.1rem solid black; */
+            display: flex;
+        }
+        .play-store{
+            height: 6vh;
+            width: 8.5vw;
+            object-fit: cover;
+            margin-right: 0.7rem;
+        }
+        .all-rights-reserve{
+            color: #5E6282;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="nav-bar">
+                  <img class="logo-img" src="images\Logo.png" alt="logo">
+                  <div class="nav-items">
+                  <p>Desitnations</p>
+                  <p>Hotels</p>
+                  <p>Flights</p>
+                  <p>Bookings</p>
+                  <p>Login</p>
+                  <button class="sign-up-button">Sign up</button>
+                  <p>EN <img class="arrow-down-en" src="images\black-down-arrow.png" alt="arrow"></p>
+                  </div>
+            </div>
+            <div class="text-img-container">
+                <div class="text-section">
+                    <h3 class="best-destination">BEST DESTINATIONS AROUND THE WORLD</h3>
+                    <h1 class="heading-main-container">Travel, enjoy</h1>
+                    <h1 class="heading-main-container">and live a new</h1>
+                    <h1 class="heading-main-container">and full life</h1>
+                    <p class="passage-main-container" style="padding-top: 1rem;">Built Wicket longer admire do barton vanity itself do in it.</p>
+                    <p class="passage-main-container">Preferred to sportsmen it engrossed listening. Park gate</p>
+                    <p class="passage-main-container">sell they west hard for the</p>
+                    <div class="find-music-play-button">
+                    <button class="find-out-more-button">Find out more</button>
+                    <img class="play-button" src="images\Play-button.png" alt="play button">
+                    <p style="color: #686D77;">Play Demo</p>
+                </div>
+                </div>
+                <div class="img-section">
+                    <img class="aeroplane" src="images\aeroplane.png" alt="aeroplane ">
+                    <img class="front-img" src="images\front-img.png" alt="front-img">
+                    <img class="aeroplane2" src="images\aeroplane.png" alt="aeroplane 2">
+                </div>
+            </div>
+        </div>
+ 
+         <div class="category">
+            <p class="category-word">CATEGORY</p>
+            <h1 class="best-services">We Offer Best Services</h1>
+            <div class="category-container">
+                <div class="four-categories">
+                    <div class="one-category">
+                        <img class="category-img1" src="images\category-1.png" alt="category 1">
+                        <h3 class="category-heading">Calculated Weather </h3>
+                        <p class="category-passage">Built Wicket longer </p>
+                        <p class="category-passage">admire do barton</p>
+                        <p class="category-passage">vanity itself do in it.</p>
+                    </div>
+                    <div class="one-category">
+                        <img class="category-img2" src="images\category2.png" alt="category 2">
+                        <h3 class="category-heading">Best Flights </h3>
+                        <p class="category-passage">Engrossed listening.  </p>
+                        <p class="category-passage">Park gate sell they </p>
+                        <p class="category-passage">west hard for the.</p>
+                    </div>
+                    <div class="one-category">
+                        <img class="category-img3" src="images\category3.png" alt="category 3">
+                        <h3 class="category-heading">Local Events</h3>
+                        <p class="category-passage">Barton vanity itself do </p>
+                        <p class="category-passage">in it. Preferd to men it </p>
+                        <p class="category-passage">engrossed listening.</p>
+                    </div>
+                     <div class="one-category">
+                        <img class="category-img4" src="images\category4.png" alt="category 4">
+                        <h3 class="category-heading">Customization</h3>
+                        <p class="category-passage">We deliver outsourced</p>
+                        <p class="category-passage">aviation services for</p>
+                        <p class="category-passage">military customers</p>
+                    </div>
+                </div>
+            </div>
+         </div>  
+
+         <div class="destinations">
+            <p class="category-word">Top Selling</p>
+            <h1 class="best-services">Top Destinations</h1>
+            <div class="destinations-container">
+                <div class="three-destinations">
+                    <div class="one-destination">
+                        <img class="destination-img" src="images\destination1.png" alt=" destination 1">
+                        <div class="destination-box">
+                            <div class="destination-text">
+                                <p>Rome, Italty</p>
+                                <p>$5,42k</p>
+                            </div>
+                            <div class="img-trip">
+                                <img src="images\cross-upwared-arrow.png" alt="cross upwared arrow">
+                                <p class="trip">10 Days Trip</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="one-destination">
+                        <img class="destination-img" src="images\destination2.png" alt=" destination 2">
+                        <div class="destination-box">
+                            <div class="destination-text">
+                                <p>London, UK</p>
+                                <p>$4.2k</p>
+                            </div>
+                            <div class="img-trip">
+                                <img src="images\cross-upwared-arrow.png" alt="cross upwared arrow">
+                                <p class="trip">12 Days Trip</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="one-destination">
+                        <img class="destination-img" src="images\destination3.png" alt=" destination 3">
+                        <div class="destination-box">
+                            <div class="destination-text">
+                                <p>Full Europe</p>
+                                <p>$15k</p>
+                            </div>
+                            <div class="img-trip">
+                                <img src="images\cross-upwared-arrow.png" alt="cross upwared arrow">
+                                <p class="trip">28 Days Trip</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <div class="book-trip">
+            <div class="text-book-trip">
+            <p style="color: #5E6282; padding-bottom: 1rem;">Easy and Fast</p>
+            <h1 class="book-your-next-trip">Book Your Next Trip </h1>
+            <h1 class="book-your-next-trip" style="padding-bottom: 1rem;">In 3 eEasy Steps</h1>
+            <div class="steps">
+                <div class="each-step">
+                    <img class="stages-img" src="images\stage1.png" alt="stage 1">
+                    <div class="paragraph-each-step">
+                        <h3 class="stages-heading">Choose Destination</h3>
+                        <p class="stages-passage">Lorem ipsum dolor sit amet, consectetur </p>
+                        <p class="stages-passage">adipiscing elit. Urna, tortor tempus. </p>
+                    </div>
+                </div>
+                <div class="each-step">
+                    <img class="stages-img" src="images\stage2.png" alt="stage 2">
+                    <div class="paragraph-each-step">
+                        <h3 class="stages-heading">Make Payment</h3>
+                        <p class="stages-passage">Lorem ipsum dolor sit amet, consectetur </p>
+                        <p class="stages-passage">adipiscing elit. Urna, tortor tempus. </p>
+                    </div>
+                </div>
+                <div class="each-step">
+                    <img class="stages-img" src="images\stage3.png" alt="stage 3">
+                    <div class="paragraph-each-step">
+                        <h3 class="stages-heading">Reach Airport on Selected Date</h3>
+                        <p class="stages-passage">Lorem ipsum dolor sit amet, consectetur </p>
+                        <p class="stages-passage">adipiscing elit. Urna, tortor tempus. </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="img-book-trip">
+                <div class="trip-img">
+                    <img class="trip-imges" src="images\trip-img.png" alt="trip img">
+                    <div class="text-trip-box">
+                        <h3>Trip To Greece</h3>
+                        <div class="date-robin">
+                            <h3 class="date">14-29 June</h3>
+                            <h3 >by Robbin joseph</h3>
+                        </div>
+                        <div class="leaf-map-send-icon">
+                            <img class="trip-icons" src="images\leaf.png" alt="leaf">
+                            <img class="trip-icons" src="images\map-icon.png" alt="map">
+                            <img class="trip-icons" src="images\send.png" alt="send">
+                        </div>
+                        <div class="building-people">
+                            <img class="building" src="images\building.png" alt="building">
+                            <h3>24 people going</h3>
+                            <img class="blue-heart" src="images\blue-heart.png" alt="blue heart">
+                        </div>
+                    </div>
+                </div>
+                <div class="trip-to-rome">
+                    <img class="trip-to-rome-img" src="images\trip-to-rome.png" alt="trip to rome">
+                    <div class="trip-to-rome-text">
+                        <p class="ongoing">Ongoing</p>
+                        <h3 class="trip-text">Trip to rome</h3>
+                        <span style="color: #8A79DF; ">40%</span>
+                        <span style="color: #080809; ">completed</span>
+                        <img class="line-img" src="images\half-fill-rectangle.png" alt="line">
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <div class="testimonials">
+            <div class="two-testimonial">
+                <p class="testimonial-word">TESTIMONIALS</p>
+                <h1 class="testimonial-headline">What People Say</h1>
+                <h1 class="testimonial-headline">About Us.</h1>
+                <img class="three-dots" src="images\three-dots.png" alt="three dots">
+            </div>
+            <div class="two-testimonial">
+                <div class="ceo">
+                    <h3 class="chirs-thomas">Chris Thomas</h3>
+                    <p class="ceo-of-red-button">CEO of Red Button</p>
+            </div>
+                
+            <div class="testimonial-back">
+                    <p class="testimonial-back-passage">“On the Windows talking painted pasture yet its</p>
+                    <p class="testimonial-back-passage-1">express parties use. Sure last upon he same as </p>
+                    <p class="testimonial-back-passage-2">knew next. Of believed or diverted no.”</p>
+                    <h3 class="mike-taylor">Mike taylor</h3>
+                    <p  class="testimonial-back-passage-1">Lahore, Pakistan</p>
+                </div>
+                <img class="ceo-img" src="images\Person-img.png" alt="person">
+             </div> 
+         </div>
+         <div class="compnaies">
+            <div class="company-container-1">
+                <div class="axon-container">
+                <img class="axon" src="images\axon.png" alt="axon">
+                </div>
+                <div class="jetstar-container">
+                <img class="jetstar" src="images\jetstar.png" alt="jetstar">
+                </div>
+                <div class="expedia-container">
+                <img class="expedia" src="images\expedia.png" alt="expedia">
+                </div>
+                <div class="quntas-container">
+                <img class="quntas" src="images\quntas.png" alt="quntas">
+                </div>
+                <div class="alitailia-container">
+                <img class="alitailia" src="images\alitailia.png" alt="alitailia">
+                </div>
+            </div>
+         </div>
+
+         <div class="subscribe">
+            <div class="subscribe-container">
+                <h1 class="subscribe-heading">Subscribe to get information, latest news and other</h1>
+                <h1 class="subscribe-heading">interesting offers about Jadoo</h1>
+                <div class="subscribe-container-button">
+                    <button class="your-mail">
+                        <img class="mail-img" src="images\mail.png" alt="mail">
+                        Your email
+                    </button>
+                    <button class="subscribe-button">Subscribe</button>
+                </div>
+            </div>
+            <img class="send-arrow-circle" src="images\circle-send-arrow-white.png" alt="send">
+         </div>
+
+         <div class="footer">
+            <div class="footer-container">
+                <div class="jadoo-conatiner">
+                    <p class="jadoo">Jadoo.</p>
+                    <p class="jadoo-passage">Book your trip in minute, get full</p>
+                    <p class="jadoo-passage">Control for much longer.</p>
+                </div>
+                <div class="company-contact-more">
+                    <div class="company-container">
+                        <h2 class="company-word">Company</h2>
+                        <p class="about-word">About</p>
+                        <p class="about-word">Careers</p>
+                        <p class="about-word">Mobile</p>
+                    </div>
+                    <div class="company-container">
+                        <h2 class="company-word" >Contact</h2>
+                        <p class="about-word">Help/FAQ</p>
+                        <p class="about-word">Press</p>
+                        <p class="about-word">Affilates</p>
+                    </div>
+                    <div class="company-container">
+                        <h2 class="company-word">More</h2>
+                        <p class="about-word">Airlinefees</p>
+                        <p class="about-word">Airline</p>
+                        <p class="about-word">Low fare tips</p>
+                    </div>
+                </div>
+                <div class="discover">
+                    <div class="facebook-insata-twitter">
+                        <img class="facebook-icon" src="images\facebook.png" alt="facebook">
+                        <img class="facebook-icon" src="images\instagram.png" alt="instagram">
+                        <img class="facebook-icon" src="images\twitter.png" alt="twitter">
+                    </div>
+                    <p class="discover-word">Discover our app</p>
+                    <div class="app-container">
+                        <img class="play-store" src="images\play-store-gpay.png" alt="gpay">
+                        <img  class="play-store" src="images\play-store-apple.png" alt="apple">
+                    </div>
+                </div>
+            </div>
+                   <p class="all-rights-reserve">All rights reserved@jadoo.co</p>
+         </div>
+    </body>
+</html>

@@ -1,0 +1,1261 @@
+<html>
+    <head>
+        <title>PROJECT-06</title>
+        <style>
+           *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .main-container{
+            height: 197vh;
+            width: 100vw;
+            background: linear-gradient(20deg, #f3f0d2,white, rgb(212, 235, 212),white, #ffd8f7);
+            /* background: linear-gradient(to top right, #DA4DF166); */
+            /* background-size: top left; */
+            /* background: linear-gradient(to  bottom left,#DA4DF166, transparent ); */
+            /* background: linear-gradient(to  bottom right,#C4F5E9B2 ); */
+        }
+        .nav-bar{
+            height: 10vh;
+            width: 100vw;
+            /* border: 0.1rem solid black; */
+            display: flex;
+            align-items: center;
+            background-color: white;
+        }
+        .logo{
+            height: 6.5vh;
+            width: 3vw;
+            object-fit: cover;
+            margin-left: 9rem;
+        }
+        .brooklyn{
+            padding-left: 0.7rem;
+        }
+        .nav-section{
+            height: 7vh;
+            width: 50vw;
+            /* border: 0.1rem solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 13rem;
+            /* background-color: white; */
+        }
+        .contact-button{
+            border-radius: 0.3rem;
+            height: 6vh;
+            width: 8vw;
+            border: none;
+            background-color: #A53DFF;
+            color: white;
+        }
+        .container{
+            /* border: 0.1rem solid rgb(179, 5, 5); */
+            height: 70vh;
+            width: 80vw;
+            margin-left: 9rem;
+            margin-top: 7.5rem;
+            display: flex;
+            /* align-items: center; */
+        }
+        .text-section-main-container{
+            /* border: 0.1rem solid black; */
+            height: 65vh;
+            width: 50vw;
+            /* margin-left: 9rem; */
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+        }
+        .say-hello{
+            height: 5.2vh;
+            width: 8vw;
+            border: none;
+            background-color: #A53DFF;
+            color: white;
+            border-radius: 0.2rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .main-container-passage{
+            color: #556070;
+            padding-top: 1.5rem;
+        }
+        .main-container-passage1{
+            color: #556070;
+            
+        }
+        .three-box{
+            height: 14vh;
+            width: 40vw;
+            /* border: 0.1rem solid black; */
+            margin-top: 6rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box{
+            height: 11vh;
+            width: 13vw;
+            /* border: 0.1rem solid yellow; */
+            background-color: #EDD8FF80;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-container-img{
+            height: 75vh;
+            width: 35vw;
+            object-fit: cover;
+            /* margin-top: 2rem; */
+        }
+        .designer{
+            height: 90vh;
+            width: 100vw;
+            /* border: 0.1rem solid green; */
+            margin-top: 7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .designer-box{
+            height: 87vh;
+            width: 78vw;
+            /* border: 0.1rem solid blue; */
+            display: flex;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0.2rem 0.2rem 0.9rem  #d1d1d4;
+        }
+        .two-section{
+            height: 83vh;
+            width: 35vw;
+            /* border: 0.1rem solid purple; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .section-text{
+            height: 83vh;
+            width: 35vw;
+            /* border: 0.1rem solid purple; */
+            margin-left: 2rem;
+        }
+        .section-one-heading{
+            padding-top: 7rem;
+        }
+        .section-one-text{
+            margin-top: 2rem;
+            color: #556070;
+        }
+        .person-img{
+            height: 60vh;
+            width: 24vw;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            border-radius: 0.3rem;
+        }
+        .icons{
+            height: 8vh;
+            width: 18vw;
+            /* border: 0.1rem solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            left: 0;
+            top: 11rem;
+            background-color: white;
+            border-radius: 0.3rem;
+            /* coor gradient baki aahe ..................................... */
+            box-shadow: 0.09rem 0.09rem 0.9rem rgb(215, 215, 215);
+        }
+        .project-download{
+            height: 8vh;
+            width: 25vw;
+            /* border: 0.1rem solid #9b4de080; */
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        .my-project{
+            height: 6vh;
+            width: 8vw;
+            border: none;
+            color: white;
+            background-color: #A53DFF;
+            border-radius: 0.2rem;
+        }
+        .download{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 6vh;
+            width: 12vw;
+            text-align: center;
+            border: none;
+            border-radius: 0.2rem;
+            border:0.1rem solid #A53DFF;
+            background-color: white;
+            margin-left: 1rem;
+            color: #A53DFF;
+            text-align: center;
+            padding-right: 0.5rem;
+            gap: 0.5rem;
+        }
+        .work-process{
+            height: 100vh;
+            width: 100vw;
+            background-color: #F0F1F3;
+            display: flex;
+            color: #132238;
+        }
+        .work-process-text{
+            height: 90vh;
+            width: 50vw;
+            /* border: 0.1rem solid black; */
+            padding-top: 16rem;
+            padding-left: 10rem; 
+        }
+        .work-process-paragraph{
+            padding-top: 1rem;
+            color: #556070;
+        }
+        .paragraph{
+            color: #556070;
+        }
+        .research{
+            height: 100vh;
+            width: 50vw;
+            /* border: 0.1rem solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            padding-top: 3rem;
+            padding-left: 2rem;
+            gap: 0.8rem;
+        }
+        .research-analyses{
+            height: 36vh;
+            width: 38vw;
+            /* border: 0.1rem solid yellowgreen; */
+            display: flex;
+            gap: 1rem;
+        }
+        .research-box{
+            height: 35vh;
+            width: 18vw;
+            /* border: 0.1rem solid black; */
+            background-color: white;
+            padding-left: 1.3rem;
+            padding-top: 1.3rem;
+            border-radius: 0.5rem;
+            transition-delay: 4s;
+            transition-duration: 5s;
+            transition-property: width;
+            /* margin-top: 2rem; */
+        }
+        .research-frame{
+            height: 7vh;
+            width: 3.4vw;
+            object-fit: cover;
+            border-radius: 0.2rem;
+        }
+        .research-heading{
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            color: #132238;
+        }
+        .research-box:hover{
+            /* margin-top: 1rem; */
+            transform: translateY(-1rem);
+            width: 18rem;
+        }
+        .analyse-box{
+            height: 35vh;
+            width: 18vw;
+            /* border: 0.1rem solid black; */
+            background-color: white;
+            padding-left: 1.3rem;
+            padding-top: 1.3rem;
+            border-radius: 0.5rem;
+            transition-delay: 4s;
+            transition-duration: 5s;
+            transition-property: width;
+        }
+        .analyse-frame{
+            height: 7vh;
+            width: 3.4vw;
+            object-fit: cover;
+            border-radius: 0.2rem;
+        }
+        .analyse-box:hover{
+            /* margin-bottom: 2rem; */
+            transform: translateY(-1rem);
+            width: 18rem;
+        }
+        .design-box{
+            height: 35vh;
+            width: 18vw;
+            /* border: 0.1rem solid black; */
+            background-color: white;
+            padding-left: 1.3rem;
+            padding-top: 1.3rem;
+            border-radius: 0.5rem;
+            transition-delay: 4s;
+            transition-duration: 5s;
+            transition-property: width;
+        }
+        .design-frame{
+            height: 7vh;
+            width: 3.4vw;
+            object-fit: cover;
+            border-radius: 0.2rem;
+        }
+        .design-box:hover{
+            /* margin-top: 1rem; */
+            transform: translateY(-1rem);
+            width: 18rem;
+        }
+        .launch-box{
+            height: 35vh;
+            width: 18vw;
+            /* border: 0.1rem solid black; */
+            background-color: white;
+            padding-left: 1.3rem;
+            padding-top: 1.3rem;
+            border-radius: 0.5rem;
+            transition-delay: 4s;
+            transition-duration: 5s;
+            transition-property: width;
+        }
+        .launch-frame{
+            height: 7vh;
+            width: 3.4vw;
+            object-fit: cover;
+            border-radius: 0.2rem;
+        }
+        .launch-box:hover{
+            /* margin-top: 1rem; */
+            transform: translateY(-1rem);
+            width: 18rem;
+        }
+        .portfolio{
+            height: 189vh;
+            width: 100vw;
+            /* background-color: #e8d6f9; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .headline-box{
+            height: 25vh;
+            width: 100vw;
+            /* border: 0.1em solid red; */
+            padding-top: 3rem;
+        }
+        .portfolio-heading{
+            text-align: center;
+        }
+        .portfolio-passage{
+            color: #87909D;
+            text-align: center;
+            padding-top: 1rem;
+        }
+        .portfolio-passage1{
+            color: #87909D;
+            text-align: center;
+        }
+        .dashboard-container{
+            height: 130vh;
+            width: 100vw;
+            /* border: 0.1rem solid black; */
+            margin-top: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .dashboard{
+            height: 64vh;
+            width: 87vw;
+            /* border: 0.1rem solid yellow; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .case-study{
+            height: 62vh;
+            width: 28vw;
+            /* border: 0.1rem solid yellowgreen; */
+            background-color: white;
+            border-radius: 0.3rem;
+            border-bottom: 0.1rem solid rgb(240, 237, 237);
+        }
+        .case-study:hover{
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(237, 237, 237);
+        }
+        .case-study-img{
+            height: 31vh;
+            width: 27.9vw;
+            object-fit: cover;
+            border-radius: 0.3rem;
+            border-bottom: 0.1rem solid rgb(240, 237, 237);
+        }
+        .case-study-button{
+            height: 7vh;
+            width: 12vw;
+            border: 0.1rem solid #A53DFF;
+            color: #A53DFF;
+            background-color: white;
+            border-radius: 0.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-left: 1.3rem;
+        }
+        .next-arrow{
+            height: 2vh;
+            width: 0.8rem;
+            object-fit: cover;
+        }
+        .case-study-text{
+            font-size: 0.9rem;
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+            padding-bottom: 1rem;
+            padding-top: 0.5rem;
+            color: #556070;
+        }
+        .case-study-heading{
+            padding-top: 0.5rem;
+            padding-left: 1.3rem;
+        }
+        .case-study-p{
+            padding-top: 0.5rem;
+            padding-left: 1.3rem;
+            font-size: 0.8rem;
+            color: #556070;
+        }
+        .more-project{
+            height: 7vh;
+            width: 11vw;
+            border: 0.1rem solid #A53DFF;
+            color: white;
+            border: none;
+            background-color: #A53DFF;
+            border-radius: 0.3rem;
+            margin-top: 2rem;
+        }
+        .project{
+            height: 60vh;
+            width: 100vw;
+            background-color: #132238;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .work-together{
+            height: 7vh;
+            width: 18vw;
+            background-color: #A53DFF;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0.1rem solid #A53DFF;
+            border: none;
+            border-radius: 0.3rem;
+            margin-top: 1.7rem;
+            gap: 0.5rem;
+        }
+        .next-arrow-white{
+             height: 3vh;
+            width: 1.5rem;
+            object-fit: cover;
+        }
+        .project-headline{
+            color: white;
+        }
+        .project-passage{
+            color: #A5ACB5;
+        }
+        .blog-container{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: #e6d5f6; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        .blog-heading{
+            margin-top: 4rem;
+            padding-bottom: 1.2rem;
+        }
+        .four-blog-container{
+            height: 50vh;
+            width: 80vw;
+            /* border: 0.1rem solid black; */
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .one-blog{
+            height: 45vh;
+            width: 19vw;
+            /* border: 0.1rem solid rgb(203, 45, 72); */
+            border: 0.1rem solid rgb(237, 234, 234);
+            border-radius: 0.3rem;
+            background-color: white;
+        }
+        .one-blog:hover{
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(237, 237, 237); 
+        }
+        .blog-img{
+            height: 28vh;
+            width: 18.9vw;
+            border-radius: 0.3rem;
+        }
+        .blog-date-comment{
+            color: #87909D;
+            font-size: 0.8rem;
+            padding-top: 1rem;
+            padding-left: 0.7rem;
+        }
+        .blog-paragraph{
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            padding-top: 0.7rem;
+            color: #333333;
+        }
+        
+        .circle{
+            height: 1vh;
+            width: 0.5vw;
+            background-color: #C3C7CE;
+            border: 0.1rem solid #C3C7CE;
+            border-radius: 0.3rem;
+        }
+        .cyclinder{
+            height: 1vh;
+            width: 1.6vw;
+            background-color: #210C33;
+            border: 0.1rem solid #210C33;
+            border-radius: 0.3rem;
+        }
+        .what-i-do{
+            height: 100vh;
+            width: 100vw;
+            background-color: #F0F1F3;
+            display: flex;
+        }
+        .what-i-do-test{
+            height: 100vh;
+            width: 50vw;
+            border: 0.1rem solid yello;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding-left: 12rem;
+        }
+        .user{
+            height: 76vh;
+            width: 50vw;
+            /* border: 0.1rem solid yellow; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 5rem;
+            padding-left: 3rem;
+        }
+        .user-box{
+            height: 23vh;
+            width: 35vw;
+            /* border: 0.1rem solid black; */
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 0.3rem;
+        }
+        .line{
+            height: 100vh;
+            border-left: 0.3rem solid #A53DFF;
+            padding-left: 1.5rem;
+            padding-top: 1.5rem;
+            border-radius: 0.3rem;
+            /* margin-left: 0.2rem; */
+        }
+        .user-box:hover{
+            box-shadow: 0.2rem 0.2rem 0.5rem rgb(158, 155, 155); 
+        }
+        .clinets{
+            height: 210vh;
+            width: 100vw;
+            /* background-color: rgb(250, 178, 127); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .comapnies{
+            height: 17vh;
+            width: 80vw;
+            /* border: 0.1rem solid brown; */
+            margin-top: 2rem;
+        }
+        .company{
+            height: 17vh;
+            width:13vw;
+            object-fit: cover;
+        }
+        .clinet-headline{
+            padding-top: 4rem;
+            padding-bottom: 1rem;
+        }
+        .testimonial{
+            padding-top: 4rem;
+        }
+        .testimonial-passage{
+            color: #2B384C;
+            padding-top: 1rem;
+        }
+        .testimonial-passage1{
+            color: hsl(216, 28%, 23%);
+        }
+        .esther{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .discuss-project{
+            height: 97vh;
+            width: 80vw;
+            border: 0.1rem solid rgb(242, 239, 239);
+            display: flex;
+            border-radius: 0.5rem;
+            background-color: white;
+            position: relative;
+            right: 0;
+           bottom: -4rem;
+           z-index:1;
+        }
+        .discuss-text{
+            height: 83vh;
+            width: 40vw;
+            /* border: 0.1rem solid tomato; */
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .discuss-paragraph{
+            color: #87909D;
+            padding-top: 1rem;
+            padding-left: 3.5rem;
+            /* padding-top: 4rem; */
+        }
+        .discuss-paragraph1{
+            color: #87909D;
+            padding-bottom: 1rem;
+            padding-left: 3.5rem;
+            /* padding-top: 4rem; */
+        }
+        .location-box{
+            height: 15vh;
+            width: 22vw;
+            /* border: 0.1rem solid #dddcde80; */
+            display: flex;
+            gap: 1rem;
+            padding-left: 1.5rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+            margin-left: 3.5rem;
+            /* padding-top: 4rem; */
+        }
+        .location-box:hover{
+            box-shadow: 0.4rem 0.4rem 1rem rgb(219, 218, 218); 
+            height: 18vh;
+            width: 25vw;
+            /* margin-left: 5rem; */
+        }
+        .location-ing{
+            height: 9vh;
+            width: 4.4vw;
+            object-fit: cover;
+            border-radius: 0.3rem;
+        }
+        .discuss-project-all-icons{
+            height: 10vh;
+            width: 20vw;
+            /* border: 0.1rem solid black; */
+            display: flex;
+            gap: 0.5rem;
+            margin-left: 3rem;
+            margin-top: 3rem;
+        }
+        .icon-buttons{
+            height: 7vh;
+            width: 3.5vw;
+            background-color: white;
+            border: 0.1rem solid #A53DFF;
+            border: none;
+            border-radius: 0.2rem;
+        }
+        .facebook-img{
+            height: 7vh;
+            width: 3.2vw;
+            background-color: #A53DFF;
+        }
+        .discuss-your-project{
+            padding-top: 4rem; 
+            padding-left: 3.5rem;
+
+        }
+        .name-email{
+            display: flex;
+            flex-direction: column;
+            padding-left: 2rem;
+            padding-top: 5rem;
+            align-items: start;
+        }
+        .name-box{
+            height: 6vh;
+            width: 31vw;
+            border-bottom: 0.1rem solid #A53DFF;
+            color: #A53DFF;
+            margin-top: 1rem;
+        }
+        .email-box{
+            height: 6vh;
+            width: 31vw;
+            border-bottom: 0.1rem solid #E6E8EB;
+            color: #697484;
+            margin-top: 1rem;
+        }
+        .location-box-discuss-section{
+            height: 6vh;
+            width: 31vw;
+            border-bottom: 0.1rem solid #E6E8EB;
+            color: #697484;
+            margin-top: 1rem;
+        }
+        .budget-box{
+            height: 6vh;
+            width: 15vw;
+            border-bottom: 0.1rem solid #E6E8EB;
+            color: #697484;
+            margin-top: 1rem;
+        }
+        .budget-subject{
+            display: flex;
+            gap: 1rem;
+        }
+        .subject-box{
+            height: 6vh;
+            width: 15vw;
+            border-bottom: 0.1rem solid #E6E8EB;
+            color: #697484;
+            margin-top: 1rem;
+        }
+        .message-box{
+            height: 6vh;
+            width: 31vw;
+            border-bottom: 0.1rem solid #E6E8EB;
+            color: #697484;
+            margin-top: 1rem;
+        }
+        .sunmit-next-arrow{
+            display: flex;
+            height: 9vh;
+            width: 10vw;
+            /* border: 0.1rem solid rgb(20, 20, 0); */
+            margin-top: 3rem;
+        }
+        .discuss-project-submit{
+            height: 6.5vh;
+            width: 9vw;
+            border: 0.1rem solid #A53DFF;
+            background-color: #A53DFF;
+            color: white;
+            text-align: center;
+            border-radius: 0.2rem;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 0.5rem;
+        }
+        .discuss-project-submit-img{
+            height: 2.5vh;
+        }
+        .footer-section{
+            height: 50vh;
+            width: 100vw;
+            background-color: #132238;
+            position: absolute;
+            padding-top: 10rem;
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .company-name-logo{
+            display: flex;
+            align-items: center;
+            /* border: 0.1rem solid white; */
+            color: white;
+            gap: 1rem;
+            height: 10vh;
+            width: 17vw;
+        }
+        .footer-bar{
+            height: 10vh;
+            width: 37vw;
+            /* border: 0.1rem solid white; */
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .footer-copy-right{
+            color: white;
+            height: 10vh;
+            width: 16vw;
+            /* border: 0.1rem solid white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+         <body>
+               <div class="main-container">
+                <div class="nav-bar">
+                    <img class="logo" src="images\b-logo.png" alt="logo">
+                    <span><h2 class="brooklyn">Brooklyn</h2></span>
+                    <div class="nav-section">
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Process</p>
+                        <p>Portfolio</p>
+                        <p>Blog</p>
+                        <p>Services</p>
+                        <button class="contact-button">Contact</button>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="text-section-main-container">
+                        <h1>Hello, I’m</h1>
+                        <h1>Brooklyn Gilbert</h1>
+                        <p class="main-container-passage">I'm a Freelance <strong>UI/UX Designer </strong>and <strong>Developer</strong> based in London, England. </p>
+                        <p class="main-container-passage1">I strives to build immersive and beautiful web applications through </p>
+                        <p class="main-container-passage1">carefully crafted code and user-centric design.</p>
+                        <button class="say-hello">Say Hello!</button>
+                        <div class="three-box">
+                            <div class="box">
+                                <h2>15 Y.</h2>
+                                <p>Experience</p>
+                            </div>
+                            <div class="box">
+                                <h2>250+</h2>
+                                <p>Project Completed</p>
+                            </div>
+                            <div class="box">
+                                <h2>58</h2>
+                                <p>Happy Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-container-img">
+                        <img class="main-container-img" src="images\person-img.png" alt="person">
+                    </div>
+                  </div>
+                  <div class="designer">
+                    <div class="designer-box">
+                          <div class="two-section">
+                            <img class="person-img" src="images\person-img-2.png" alt=" person-img">
+                            <div class="icons">
+                                
+                            <button class="icon-buttons" >
+                                <img src="images\f.png" alt="">
+                            </button>
+                            <button class="icon-buttons">
+                                <img src="images\internet-violet.png" alt="">
+                            </button>   
+                            <button class="icon-buttons">
+                                <img src="images\instagram-violet.png" alt="">
+                            </button>
+                            <button class="icon-buttons" style="background-color: #A53DFF;">
+                                <img src="images\linkedin (2).png" alt="">
+                            </button> 
+                            <button class="icon-buttons">
+                                <img src="images\be-violet.png" alt="">
+                            </button>
+                    
+                            </div>
+                          </div>
+                          <div class="section-text">
+                            <h1 class="section-one-heading">I am Professional User </h1>
+                            <h1 style="margin-top: 0.5rem;">Experience Designer</h1>
+                            <p class="section-one-text">I design and develop services for customers specializing</p>
+                            <p class="paragraph">creating stylish, modern websites, web services and online </p>
+                            <p class="paragraph"">stores. My passion is to design digital user experiences.</p>
+
+                            <p style="margin-top: 1rem;"class="paragraph">I design and develop services for customers specializing </p>
+                            <p class="paragraph">creating stylish, modern websites, web services.</p>
+                            <div class="project-download">
+                                <button class="my-project">My Project</button>
+                                <button class="download"><img src="images\download.png" alt="download">Download CV</button>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+               </div>
+
+               <div class="work-process">
+                   <div class="work-process-text">
+                    <h1>Work Process</h1>
+                     <p class="work-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                     <p class="paragraph">Nulla purus arcu, varius eget velit non, laoreet imperdiet </p>
+                     <p class="paragraph">orci. Mauris ultrices eget lorem ac vestibulum. Suspendis </p>
+                     <p class="paragraph">imperdiet,</p>
+
+                     <p class="paragraph" style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                     <p class="paragraph">Nulla purus arcu, varius eget velit non.</p>
+                   </div>
+                   <div class="research">
+                    <div class="research-analyses">
+                        <div class="research-box">
+                            <img class="research-frame" src="images\research-frame.png" alt="reseach">
+                            <h4 class="research-heading">1. Research</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, </p>
+                            <p class="paragraph">consectetur adipiscing elit. </p>
+                            <p class="paragraph">Nulla purus arcu.</p>
+                        </div>
+                        <div class="analyse-box">
+                            <img class="analyse-frame" src="images\analyse-frame.png" alt="analyse-frame">
+                            <h4 class="research-heading">2. Analyze</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, </p>
+                            <p class="paragraph">consectetur adipiscing elit. </p>
+                            <p class="paragraph">Nulla purus arcu.</p>
+                        </div>
+                         </div>
+                    <div class="research-analyses" style="margin-top: 1rem;">
+                        <div class="design-box">
+                            <img class="design-frame" src="images\desing-frame.png" alt="design-frame">
+                            <h4 class="research-heading">3. Design</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, </p>
+                            <p class="paragraph">consectetur adipiscing elit. </p>
+                            <p class="paragraph">Nulla purus arcu.</p>
+                        </div>
+                        <div class="launch-box">
+                            <img class="launch-frame" src="images\launch-frame.png" alt="launch-frame">
+                            <h4 class="research-heading">4. Launch</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, </p>
+                            <p class="paragraph">consectetur adipiscing elit. </p>
+                            <p class="paragraph">Nulla purus arcu.</p>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+
+               <div class="portfolio">
+                <div class="headline-box">
+                    <h1 class="portfolio-heading">Portfolio</h1>
+                    <p class="portfolio-passage">There are many variations of passages of Lorem Ipsum available,</p>
+                    <p class="portfolio-passage1">but the majority have suffered alteration.</p>
+                </div>
+                <div class="dashboard-container">
+                    <div class="dashboard">
+                        <div class="case-study">
+                            <img class="case-study-img" src="images\case-study-1.png" alt="case study 1">
+                            <p class="case-study-p">UI-UX DESIGN</p>
+                            <h3 class="case-study-heading">Product Admin Dashboard</h3>
+                            <p class="case-study-text">Vivamus eleifend convallis ante, non pharetra libero
+                            molestie laoreet. Donec id imperdiet lacus.</p>
+                            <button class="case-study-button"><h3>Case Study</h3>
+                                <img class="next-arrow" src="images\next-arrow.png" alt="next=arrow">
+                            </button>
+                        </div>
+                        <div class="case-study">
+                            <div class="case-study">
+                            <img class="case-study-img" src="images\case-study-2.png" alt="case study 2">
+                            <p class="case-study-p">UI-UX DESIGN</p>
+                            <h3 class="case-study-heading">Product Admin Dashboard</h3>
+                            <p class="case-study-text">Vivamus eleifend convallis ante, non pharetra libero
+                            molestie laoreet. Donec id imperdiet lacus.</p>
+                            <button class="case-study-button"><h3>Case Study</h3>
+                                <img class="next-arrow" src="images\next-arrow.png" alt="next=arrow">
+                            </button>
+                        </div>
+                        </div>
+                        <div class="case-study">
+                            <div class="case-study">
+                            <img class="case-study-img" src="images\case-study-3.png" alt="case study 3">
+                            <p class="case-study-p">UI-UX DESIGN</p>
+                            <h3 class="case-study-heading">Product Admin Dashboard</h3>
+                            <p class="case-study-text">Vivamus eleifend convallis ante, non pharetra libero
+                            molestie laoreet. Donec id imperdiet lacus.</p>
+                            <button class="case-study-button"><h3>Case Study</h3>
+                                <img class="next-arrow" src="images\next-arrow.png" alt="next=arrow">
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard">
+                        <div class="case-study"><div class="case-study">
+                            <img class="case-study-img" src="images\case-study-4.png" alt="case study 4">
+                            <p class="case-study-p">UI-UX DESIGN</p>
+                            <h3 class="case-study-heading">Product Admin Dashboard</h3>
+                            <p class="case-study-text">Vivamus eleifend convallis ante, non pharetra libero
+                            molestie laoreet. Donec id imperdiet lacus.</p>
+                            <button class="case-study-button"><h3>Case Study</h3>
+                                <img class="next-arrow" src="images\next-arrow.png" alt="next=arrow">
+                            </button>
+                        </div></div>
+                        <div class="case-study"><div class="case-study">
+                            <img class="case-study-img" src="images\case-study-5.png" alt="case study 5">
+                            <p class="case-study-p">UI-UX DESIGN</p>
+                            <h3 class="case-study-heading">Product Admin Dashboard</h3>
+                            <p class="case-study-text">Vivamus eleifend convallis ante, non pharetra libero
+                            molestie laoreet. Donec id imperdiet lacus.</p>
+                            <button class="case-study-button"><h3>Case Study</h3>
+                                <img class="next-arrow" src="images\next-arrow.png" alt="next=arrow">
+                            </button>
+                        </div></div>
+                        <div class="case-study"><div class="case-study">
+                            <img class="case-study-img" src="images\case-study-6.png" alt="case study 6">
+                            <p class="case-study-p">UI-UX DESIGN</p>
+                            <h3 class="case-study-heading">Product Admin Dashboard</h3>
+                            <p class="case-study-text">Vivamus eleifend convallis ante, non pharetra libero
+                            molestie laoreet. Donec id imperdiet lacus.</p>
+                            <button class="case-study-button"><h3>Case Study</h3>
+                                <img class="next-arrow" src="images\next-arrow.png" alt="next=arrow">
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="more-project"><h3>More Project</h3></button>
+               </div>
+
+               <div class="project">
+                <h1 class="project-headline">Do you have Project Idia?</h1>
+                <h1 class="project-headline">Let's discuss your project!</h1>
+                <p class="project-passage" style="padding-top: 1.5rem;">There are many variations of passages of Lorem Ipsum available,</p>
+                <p class="project-passage">but the majority have suffered alteration.</p>
+                <button class="work-together"><h3>Let’s work Together</h3>
+                    <img class="next-arrow-white" src="images\next-arrow-white.png" alt="next=arrow">
+                </button>
+               </div>
+                
+               <div class="blog-container">
+                <h1 class="blog-heading">Blog</h1>
+                <p class="paragraph">There are many variations of passages of Lorem Ipsum available,</p>
+                <p class="paragraph">but the majority have suffered alteration.</p>
+                <div class="four-blog-container">
+                    <div class="one-blog">
+                        <img class="blog-img" src="images\blog-1.png" alt="blog1">
+                        <p class="blog-date-comment">22 Oct, 2020 / 246 Comments</p>
+                        <p class="blog-paragraph">Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                    </div>
+                    <div class="one-blog">
+                        <img class="blog-img" src="images\blog-2.png" alt="blog2">
+                        <p class="blog-date-comment">22 Oct, 2020 / 246 Comments</p>
+                        <p class="blog-paragraph">Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                    </div>
+                    <div class="one-blog">
+                        <img class="blog-img" src="images\blog-3.png" alt="blog3">
+                        <p class="blog-date-comment">22 Oct, 2020 / 246 Comments</p>
+                        <p class="blog-paragraph">Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                    </div>
+                    <div class="one-blog">
+                        <img class="blog-img" src="images\blog-4.png" alt="blog4">
+                        <p class="blog-date-comment">22 Oct, 2020 / 246 Comments</p>
+                        <p class="blog-paragraph">Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                    </div>
+                </div>
+                <div class="button-box">
+                    <button class="cyclinder"></button>
+                    <button class="circle"></button>
+                    <button class="circle"></button>
+                </div>
+               </div>
+
+               <div class="what-i-do">
+                  <div class="what-i-do-test">
+                    <h1>What I do?</h1>
+                     <p class="work-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                     <p class="paragraph">Nulla purus arcu, varius eget velit non, laoreet imperdiet </p>
+                     <p class="paragraph">orci. Mauris ultrices eget lorem ac vestibulum. Suspendis </p>
+                     <p class="paragraph">imperdiet,</p>
+
+                     <p class="paragraph" style="padding-top: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                     <p class="paragraph">Nulla purus arcu, varius eget velit non.</p>
+                     <button class="say-hello">Say Hello!</button>
+                  </div>
+                  <div class="user">
+                    <div class="user-box">
+                        <div class="line">
+                        <h3>User Experience (UX)</h3>
+                        <p class="work-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p class="paragraph">Nulla purus arcu, varius eget velit non, laoreet imperdiet </p>
+                        <p class="paragraph">orci. Mauris ultrices eget lorem ac vestibulum. </p>
+                    </div>
+                    </div>
+                    <div class="user-box">
+                        <div class="line">
+                        <h3>User Interface (UI)</h3>
+                        <p class="work-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p class="paragraph">Nulla purus arcu, varius eget velit non, laoreet imperdiet </p>
+                        <p class="paragraph">orci. Mauris ultrices eget lorem ac vestibulum. </p>
+                    </div>
+                    </div>
+                    <div class="user-box">
+                        <div class="line">
+                        <h3>Web Development</h3>
+                        <p class="work-process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p class="paragraph">Nulla purus arcu, varius eget velit non, laoreet imperdiet </p>
+                        <p class="paragraph">orci. Mauris ultrices eget lorem ac vestibulum. </p>
+                    </div>
+                    </div>
+                  </div>
+               </div>
+
+               <div class="clinets">
+                <h1 class="clinet-headline">Happy Clients</h1>
+                <p class="portfolio-passage">There are many variations of passages of Lorem Ipsum available,</p>                    
+                <p class="portfolio-passage1">but the majority have suffered alteration.</p>
+                        <div class="comapnies">
+                            <img class="company" src="images\google.png" alt="google">
+                            <img class="company"  src="images\dribbble.png" alt="dribbble">
+                            <img class="company"  src="images\linkedin.png" alt="linkedin">
+                            <img class="company"  src="images\amazon.png" alt="amazon">
+                            <img class="company"  src="images\medium.png" alt="medium">
+                            <img class="company"  src="images\spotify.png" alt="spotify">
+                        </div>
+                       <h1 class="testimonial">Testimonial</h1>
+                <p class="portfolio-passage">There are many variations of passages of Lorem Ipsum available,</p>                    
+                <p class="portfolio-passage1">but the majority have suffered alteration.</p>
+                 <p class="testimonial-passage">“Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis, nec semper odio </p>
+                 <p class="testimonial-passage1">convallis at. Curabitur imperdiet semper arcu, a finibus arcu suscipit in. Donec quis placerat nibh. </p>
+                 <p class="testimonial-passage1">Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.</p>
+                 <p class="testimonial-passage1">Morbi ornare elit at libero suscipit porta.”</p>
+                 <strong><p class="esther">Esther Howard</p></strong>
+                 <p>Managing Director, ABC company</p>
+                  <div class="button-box" style="padding-top: 2rem;">
+                    <button class="cyclinder"></button>
+                    <button class="circle"></button>
+                    <button class="circle"></button>
+                </div>
+                <div class="discuss-project">
+                    <div class="discuss-text">
+                        <h1 class="discuss-your-project">Let’s discuss your Project</h1>
+                        <p class="discuss-paragraph">There are many variations of passages of Lorem Ipsu </p>
+                        <p class="discuss-paragraph1"> available. but the majority have suffered alte.</p>
+                        <div class="location-box">
+                            <img class="location-ing" src="images\location-voilet.png" alt="location">
+                            <div class="location-text">
+                                <p>Address:</p>
+                                <p>New Mexico 31134</p>
+                            </div>
+                        </div>
+                         <div class="location-box">
+                            <img class="location-ing" src="images\location-white.png" alt="location">
+                            <div class="location-text">
+                                <p>My Email:</p>
+                                <p>mymail@mail.com</p>
+                            </div>
+                        </div>
+                         <div class="location-box">
+                            <img class="location-ing" src="images\location-white.png" alt="location">
+                            <div class="location-text">
+                                <p>Call Me Now:</p>
+                                <p>00-1234 00000</p>
+                            </div>
+                        </div>
+                        <div class="discuss-project-all-icons">
+                            <button class="icon-buttons" style="background-color: #A53DFF;">
+                                <img src="images\facebook-white.png" alt="">
+                            </button>
+                            <button class="icon-buttons">
+                                <img src="images\internet-violet.png" alt="">
+                            </button>    
+                            <button class="icon-buttons">
+                                <img src="images\be-violet.png" alt="">
+                            </button>
+                            <button class="icon-buttons">
+                                <img src="images\instagram-violet.png" alt="">
+                            </button>
+                            <button class="icon-buttons">
+                                <img src="images\linkedin-violet.png" alt="">
+                            </button>
+                    </div>
+                    </div>
+                    <div class="discuss-text">
+                        <div class="name-email">
+                        <p class="portfolio-passage">There are many variations of passages of Lorem Ipsum </p>                    
+                        <p class="portfolio-passage1"> available,but the majority have suffered alteration.</p>
+                           <div class="name-box">
+                        <p>Name*</p>
+                            </div>
+                            <div class="email-box">
+                        <p>Email*</p>
+                            </div>
+                            <div class="location-box-discuss-section">
+                        <p>Location*</p>
+                            </div>
+                            <div class="budget-subject">
+                            <div class="budget-box">
+                        <p>Budget*</p>
+                            </div>
+                             <div class="subject-box">
+                        <p>Subject*</p>
+                            </div>
+                            </div>
+                            <div class="message-box">
+                        <p>Message*</p>
+                            </div>
+                            <div class="sunmit-next-arrow">
+                            <button class="discuss-project-submit">Submit
+                                <img class="discuss-project-submit-img" src="images\submit-next=arrow.png" alt="submit next arow">
+                            </button>
+                            </div>
+                    </div>
+                   </div>
+                </div>
+               </div>
+
+               <div class="footer-section">
+                   <div class="company-name-logo">
+                        <img src="images\b-logo.png" alt=" logo-company">
+                        <h2>Brooklyn</h2>
+                   </div>
+                    <div class="footer-bar">
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Services</p>
+                        <p>Process</p>
+                        <p>Portfolio</p>
+                        <p>Blog</p>
+                        <p>Contact</p>
+                    </div>
+                    <p class="footer-copy-right">Copyright © 2022 Picto.</p>
+               </div>
+         </body>
+    </head>
+</html>

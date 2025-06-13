@@ -1,0 +1,773 @@
+<html>
+<head>
+   <title>PROJECT-05</title>
+   <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+   .container{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aquamarine; */
+    /* box-sizing: border-box; */
+   }
+   .nav-tag{
+    height: 11vh;
+    width: 100vw;
+    /* border: 0.1rem solid black; */
+    display: flex;
+    padding-top: 2rem;
+   }
+   .logo{
+    height: 7vh;
+    width: 15vw;
+    /* border: 0.1rem solid green; */
+    padding-left: 6rem;
+   }
+   .logo_img{
+    height: 3vh;
+    object-fit: cover;
+   }
+   .features{
+    height: 7vh;
+    width: 60vw;
+    /* border: 0.1rem solid yellow; */
+    display: flex;
+    gap: 2rem;
+    padding-left: 7rem;
+   }
+   .down_arrow{
+    height: 1.5vh;
+    width: 1vw;
+    object-fit: cover;
+   }
+   .loginregister{
+    height: 7vh;
+    width: 22vw;
+    /* border: 0.1rem solid red; */
+    margin-left: 1rem;
+   }
+   .loginbutton{
+    width: 5.5vw;
+    height: 4.5vh;
+    /* border-color: #3247C6; */
+    border: 0.09rem solid #3247C6;
+    border-radius: 0.25rem;
+    color: #3247C6;
+    background-color: white;
+    /* margin-left: rem; */
+   }
+   .registerbutton{
+    width: 8.5vw;
+    height: 4.5vh;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #E54F6D;
+    color: white;
+    margin-left: 1rem;
+   }
+   .section_one{
+    background-color: #3247C6;
+    height: 66vh;
+    width: 83vw;
+    border-radius: 1rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    display: flex;
+   }
+   .section_one_text{
+    /* border: 0.1rem solid crimson; */
+    height: 70vh;
+    width: 45vw;
+    color: white;
+    font-size: 2.5rem;
+    padding-left: 7rem;
+    padding-top: 2.3rem;
+    margin-bottom: 2rem;
+    padding-right: 5rem;
+   }
+   .section_one_img{
+    /* border: 0.1rem solid yellow; */
+    height: 70vh;
+    width: 30vw;
+    
+   }
+   .section_passage{
+    /* margin-top: 1rem; */
+    /* padding-left: rem; */
+     font-size: 0.9rem;
+   }
+   .sign_up{
+    height: 4.5vh;
+    width: 10.3vw;
+    background-color: #3247C6;
+    color: white;
+    border-radius: 0.5rem 0.5rem 0.5rem #E54F6D;
+    border: 0.05rem solid white;
+    margin-top: 2rem;
+   }
+   .next_arrow{
+    background-color: #E54F6D;
+    border: none;
+    height: 4.5vh;
+    width: 10.3vw;
+    border-radius: 0.3rem;
+    border: 0.05rem solid #E54F6D;
+    color: white;
+    margin-left: 0.7rem;
+   }
+   .section-img{
+    height: 52vh;
+    width: 25vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-top: 5.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    /* position: sticky; */
+    /* background-image: url('images/hower-img.png'); */
+   }
+   .section-img-position{
+    /* background-image: url('images/chat-front-img.png'); */
+    height: 52vh;
+    width: 25vw;
+   }
+   .chat-img{
+    height: 52vh;
+    width: 25vw;
+    object-fit: cover;
+    position: absolute;
+    top: 14rem;
+    right: 21rem;
+    border-radius: 0.3rem;
+   }
+   .mini-container{
+    background-color: #a1a0a033;
+    height: 60vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/Abstract-wave-png-17 2.png');
+   }
+   .mini-container-text{
+    height: 45vh;
+    width: 50vw;
+    /* border: 0.1rem solid black; */
+    padding-top: 1rem;
+    padding-left: 7rem;
+   }
+   .mini-container-heading{
+    padding-top: 1rem;
+   }
+   .number{
+    display: flex;
+   }
+   .number1{
+    /* display: flex; */
+   }
+   .four-x{
+    color: #3247C6;
+    padding-top: 1rem;
+   }
+   .four-x-img{
+     object-fit: cover;
+   }
+   .seventy-percent{
+    color: #3247C6;
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+   }
+   .seventy-percent-img{
+    object-fit: cover;
+   }
+   .mini-container-img{
+    height: 45vh;
+    width: 50vw;
+    /* border: 0.1rem solid black; */
+   }
+   .mini-img{
+    /* background-image: url('images/mini-conatiner-background-img.png'); */
+    object-fit: cover;
+    height: 33vh;
+    width: 25vw;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    position: absolute;
+   }
+   .mini-main-img{
+    height: 33vh;
+    width: 25vw;
+    object-fit: cover;
+   }
+   .mini-img-position{
+    /* background-image: url('images/Mask group.png'); */
+    height: 33vh;
+    width: 25vw;
+    /* object-fit: cover; */
+   }
+   .mini-position-img{
+    height: 33vh;
+    width: 25vw;
+    object-fit: cover;
+    position: relative;
+    bottom: -2rem;
+    left: 6.7rem;
+   }
+   .section-three{
+    height: 70vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    position: relative;
+    /* display: flex; */
+    /* align-items: center; */
+
+   }
+   .access-ai{
+    height: 17vh;
+    width: 85vw;
+    border-radius: 0.5rem;
+    background-color: #3247C6;
+    margin-left: 6rem;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    position: absolute;
+    left:0;
+    top:-3rem;
+   }
+   .access-ai-text{
+    color: white;
+    font-size: 1.7rem;
+    padding-left: 7rem;
+   }
+   .sign-up-for-free{
+    height: 6vh;
+    width: 14vw;
+    background-color: #E54F6D;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    margin-left: 9rem;
+   }
+   .testimonials{
+    height: 15vh;
+    width: 100vw;
+    /* border: 0.1rem solid black; */
+    /* text-align: center; */
+    padding-left: 34rem;
+    padding-top: 6rem;
+   }
+   .circle-arrows{
+    display: flex;
+   }
+   .three-container{
+    height: 60vh;
+    width: 88vw;
+    /* border: 0.1rem solid yellow; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    gap: 2rem;
+    display: flex;
+    margin-top: 4rem;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* padding-left: 4rem; */
+    margin-left: 5rem;
+    
+   }
+
+   .one-container{
+    height: 50vh;
+    width: 33vw;
+    border: 0.1rem solid #3247C6;
+    border-radius: 0.5rem;
+    padding-left: 1.7rem;
+    padding-top: 2rem;
+    flex-shrink: 0;
+
+   }
+   .one-container-heading{
+    color:#3247C6;
+   }
+   .university{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   }
+   .star-img{
+    object-fit: cover;
+    /* margin-top: 0.5rem; */
+   }
+   .rated-verify{
+    display: flex;
+    padding-top: 1rem;
+    gap: 5rem;
+   }
+   .rated{
+    padding-bottom: 0.5rem;
+   }
+   .batch-or-img{
+    display: flex;
+    padding-top: 0.5rem;
+   }
+   .circle-tick-img{
+    object-fit: cover;
+    width: 1.2vw;
+    height: 2.6vh;
+   }
+   .section-four{
+    height: 65vh;
+    width: 100vw;
+    /* background-color: #E54F6D; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: url('images/Abstract-wave-png-17 2.png');
+   }
+   .faq{
+    padding-bottom: 3rem;
+   }
+   .career-counsellimg{
+    height: 12vh;
+    width: 85vw;
+    border-bottom: 0.1rem solid black;
+    /* margin-top: 3rem; */
+    padding-left: 2.5rem;
+    display: flex;
+    align-items: center;
+   }
+   .career-counsellimg:hover{
+    height: 12vh;
+    width: 85vw;
+   }
+   .counseeling-img{
+    height: 4.4vh;
+    width: 2vw;
+    object-fit: cover;
+    margin-left: 40rem;
+   }
+   .section-five{
+    height: 70vh;
+    width: 100vw;
+    /* background-color: rgb(214, 184, 242); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 3rem; */
+   }
+   .footer-section{
+    height: 63vh;
+    width: 100vw;
+    background-color: #3247C6;
+    margin-top: 3.5rem;
+    display: flex;
+    position: relative;
+   }
+   .footer-bar{
+    height: 52vh;
+    width: 50vw;
+    /* border: 0.1rem solid red; */
+   }
+   .footer-passage{
+    padding-left: 8rem;
+    color: white;
+   }
+   .admission-guide{
+    height: 13vh;
+    width: 36vw;
+    border: 0.1rem solid #FFFC31;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    position: relative;
+   }
+   .uk-us{
+    height: 5vh;
+    width: 20vw;
+    border-right: 0.1rem solid #FFFC31;
+    display: flex;
+    color: white;
+    margin-top: 1.3rem;
+    gap: 1rem;
+    padding-left: 1rem;
+    align-items: center;
+    padding-right: 1rem;
+   }
+   .star-img-footer{
+    object-fit: cover;
+    height: 2.4vh;
+    width: 1.2vw;
+   }
+   .box{
+    height: 6vh;
+    width: 14.5vw;
+    /* border: 0.1rem solid black; */
+    background-color: #3247C6;
+    position: absolute;
+    bottom: 12rem;
+    left: 11.5rem;
+   }
+   .follow{
+    padding-left: 8rem; 
+    padding-top: 1rem;
+    color: white;
+   }
+   .follow-facebook-linkeden{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+   }
+   .facebook-linkdine{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 0.7rem;
+    margin-left: 1.5rem;
+
+   }
+   .linkden-button{
+    height: 5vh;
+    width: 2.3vw;
+    border-radius: 1rem;
+    border: none;
+    margin-right: 0.8rem;
+   }
+   .teched{
+    color: white;
+    position: absolute;
+    top: 22.66rem;
+    left: 9rem;
+
+   }
+   .footer-right-section{
+    height: 52vh;
+    width: 50vw;
+    /* border: 0.1rem solid black; */
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-left: 4rem;
+   }
+   .resource-about-footer{
+    width: 40vw;
+    /* border: 0.1rem solid black; */
+    height: 35vh;
+    display: flex;
+   }
+   .resorces{
+    height: 38vh;
+    width: 20vw;
+    /* border: 0.1rem solid yellow; */
+    padding-top: 2.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+   }
+   .footer-p{
+    padding-top: 1rem;
+   }
+   .about-us{
+    color: white;
+    padding-top: 2.5rem;
+   }
+   .email-subscribe{
+    height: 12vh;
+    width: 35vw;
+    /* border: 0.1rem solid red; */
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+
+   }
+   .subscribe-button{
+    height: 6vh;
+    width: 11vw;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #E54F6D;
+    color: white;
+   }
+   .enter-email{
+    color: #969696;
+   }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-tag">
+            <div class="logo">
+                <img class="logo_img" src="images\TechEd.png" alt="TechEd">
+            </div>
+            <div class="features">
+                <p>US Guidance</p>
+                <p>UK Guidance</p>
+                <p>Essay Writing</p>
+                <p>Resources
+                    <img class="down_arrow" src="images\Down-arrow.png" alt="down-arrow">
+                </p>
+                <p>About Us
+                    <img class="down_arrow" src="images\Down-arrow.png" alt="down-arrow">
+                </p>
+            </div>
+            <div class="loginregister">
+                <button class="loginbutton"> Login</button>
+                <button class="registerbutton"> Register</button>
+            </div>
+        </div>
+        <div class="section_one">
+            <div class="section_one_text">
+                <p>Your <strong>Personal</strong> </p>
+                <strong>  AI University </strong>
+                <strong> Counselor</strong>
+                <p class="section_passage" style="padding-top: 1.2rem;">Access Free, Expert Guidance for </p>
+                <p class="section_passage">US & UK University Admissions</p>
+                <button class="sign_up"> Sign up for free</button>
+                <button class="next_arrow">For  School
+                    <img src="images\Next-arrow.png" alt="next-arrow">
+                </button>
+            </div>
+            <div class="section_one_img">
+                <img class="section-img" src="images\hower-img.png" alt="background img">
+                
+            </div>
+            <div class="section-img-position">
+              <img class="chat-img" src="images\chat-front-img.png" alt="chat img">
+            </div>
+        </div>
+    </div>
+    <div class="mini-container">
+          <div class="mini-container-text">
+            <h4 style="color: #3247C6;">Why TechEd?</h4>
+            <h2 class="mini-container-heading">Boost  Your Admission Odds with </h2>
+            <h2 class="mini-container-heading2">Proven Success Rate:</h2>
+            <p style="padding-top: 0.5rem;">our students gain admission to their first-choice university.</p>
+            <div class="number">
+                <div class="number1">
+            <h1 class="four-x">4x
+                <img class="four-x-img" src="images\up-arrow.png" alt="up arrow">
+            </h1>
+            <h3 style="padding-top: 0.5rem;">Increase Chance</h3>
+            </div>
+            <div class="number2">
+            <h1 class="seventy-percent">70%
+                <img class="seventy-percent-img" src="images\up-arrow.png" alt="up arrow">
+            </h1>
+             <h3 style="padding-left: 2.2rem; padding-top: 0.5rem;">Admission to top univerity</h3>
+            </div>
+        </div>
+          </div>
+          <div class="mini-container-img">
+            <div class="mini-img">
+             <img class="mini-main-img" src="images\mini-conatiner-background-img.png" alt="">
+            </div>
+            <div class="mini-img-position">
+              <img class="mini-position-img" src="images\Mask group.png" alt="person img">
+            </div>
+          </div>
+    </div>
+    <div class="section-three">
+          <div class="access-ai">
+            <h2 class="access-ai-text">Access your AI university counselor now!</h2>
+            <button class="sign-up-for-free">Sign up for free
+                <img  class="sign-up-for-free-img" src="images\Next-arrow.png" alt="next arrow">
+            </button>
+          </div>
+          <div class="testimonials">
+            <h1>Testimonials
+                <img style="margin-left: 19rem;" src="images\circle-arrow-left.png" alt="circle arrow left">
+                <img style="margin-left: 1rem;" src="images\circle-arrow-right.png" alt="circle arrow right">
+            </h1>
+          </div>
+           <div class="three-container">
+               <div class="one-container">
+                   <h2 class="one-container-heading">Enoch</h2>
+                   <h4 class="university">Harvard University</h4>
+                   <p>Writing a university application essay is a lengthy</p>
+                   <p>process, and <strong>TechEd</strong> course is remarkably succinct,</p>
+                   <p>valuing efficiency without sacrificing detail. The points</p>
+                   <p>are well-supported by exampleswhich are analyzed </p>
+                    <p> in detail.</p>
+                    <div class="rated-verify">
+                      <div class="star-img">
+                        <h3 class="rated">Rated 5/5 stars</h3>
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                      </div>
+                      <div class="verify">
+                      <h3 >Verified Student</h3>
+                         <div class="batch-or-img">
+                            <img class="circle-tick-img" src="images\circle-tick-img.png" alt="circle tick">
+                            <p>2022 Batch</p>
+                         </div>
+                      </div>
+                    </div>
+
+               </div>
+               <div class="one-container">
+                <h2 class="one-container-heading">Nat</h2>
+                <h4 class="university">Duke University</h4>
+                   <p><strong>TechEd</strong> program is highly effective because it guides </p>
+                   <p>students through the entire college process. I </p>
+                   <p>especially like AlgoEd’s writing program. Not only does</p>
+                   <p>AlgoEd provide a variety of excellent examples, but </p>
+                   <p>they also ......</p>
+                    <div class="rated-verify">
+                      <div class="star-img">
+                        <h3 class="rated">Rated 5/5 stars</h3>
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                      </div>
+                      <div class="verify">
+                      <h3>Verified Student</h3>
+                         <div class="batch-or-img">
+                            <img class="circle-tick-img" src="images\circle-tick-img.png" alt="circle tick">
+                            <p>2022 Batch</p>
+                         </div>
+                      </div>
+                    </div>
+
+                         <!-- <div class="one-container">
+                <h2 class="one-container-heading">Nat</h2>
+                <h4 class="university">Duke University</h4>
+                   <p><strong>TechEd</strong> program is highly effective because it guides </p>
+                   <p>students through the entire college process. I </p>
+                   <p>especially like AlgoEd’s writing program. Not only does</p>
+                   <p>AlgoEd provide a variety of excellent examples, but </p>
+                   <p>they also ......</p>
+                    <div class="rated-verify">
+                      <div class="star-img">
+                        <h3 class="rated">Rated 5/5 stars</h3>
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                      </div>
+                      <div class="verify">
+                      <h3>Verified Student</h3>
+                         <div class="batch-or-img">
+                            <img class="circle-tick-img" src="images\circle-tick-img.png" alt="circle tick">
+                            <p>2022 Batch</p>
+                         </div>
+                      </div>
+                    </div>
+
+               </div> -->
+
+               </div>
+               <div class="one-container">
+                  <h2 class="one-container-heading">Issac</h2>
+                  <h4 class="university">University of Pennsylvania</h4>
+                  <p>The university application process is really long and </p>
+                  <p>complicated. <strong>TechEd</strong> step-by-step videos really </p>
+                  <p>guide one through the entire</p>
+                  <p>process, including meeting key deadlines throughout </p>
+                  <p>the application timeline.</p>
+                 <div class="rated-verify">
+                      <div class="star-img">
+                        <h3 class="rated">Rated 5/5 stars</h3>
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                        <img src="images\star.png" alt="star">
+                      </div> 
+                      <div class="verify">
+                      <h3>Verified Student</h3>
+                         <div class="batch-or-img">
+                            <img class="circle-tick-img" src="images\circle-tick-img.png" alt="circle tick">
+                            <p>2022 Batch</p>
+                         </div>
+                       </div>  
+               </div>
+        </div>
+    </div>
+         <div class="section-four">
+            <h1 class="faq">FAQ</h1>
+            <div class="career-counsellimg">
+                <h3 style="padding-right: 7.5rem;">What is career counselling?</h3>
+                <img class="counseeling-img" src="images\circle-up-arrow.png" alt="circle up arrow">
+            </div>
+            <div class="career-counsellimg">
+                <h3 style="padding-right: 2.7rem;">Why is career counselling important?</h3>
+                <img class="counseeling-img" src="images\circle-up-arrow.png" alt="circle up arrow">
+            </div>
+            <div class="career-counsellimg">
+                <h3 style="padding-right: 0.1rem;" >Career counsellor training & certifications</h3>
+                <img class="counseeling-img"  src="images\circle-up-arrow.png" alt="circle up arrow">
+            </div>
+         </div>
+         <div class="section-five">
+              <div class="footer-section">
+                <div class="footer-bar">
+                  <p class="footer-passage" style="padding-top: 5rem;">Empower students to achieve their aspirations by offering </p>
+                  <p class="footer-passage">personalized, high-quality, and affordable university admissions </p>
+                  <p class="footer-passage">guidance.</p>
+                  <div class="admission-guide">
+                       <div class="uk-us">
+                        <img class="star-img-footer" src="images\yellow-star.png" alt=" yellow star">
+                        <p>US Admissions Guidance</p>
+                       </div>
+                       <div class="uk-us" style="border: none;">
+                        <p>UK Admissions Guidance</p>
+                       </div>
+                  </div>
+                  <div class="box"></div>
+                  <div class="follow-facebook-linkeden">
+                  <P class="follow">Follow us on</P>
+                  <div class="facebook-linkdine">
+                    <button class="linkden-button"><img src="images\facebook-img.png" alt="facebook"></button>
+                    <button class="linkden-button"><img src="images\linkden.png" alt="linkden"></button>
+                  </div>
+                  </div>
+                </div>
+                <h3 class="teched">TechEd</h3>
+                <div class="footer-right-section">
+                  <div class="resource-about-footer">
+                    <div class="resorces">
+                      <h2>Resources</h2>
+                      <p class="footer-p">Blog</p>
+                      <p class="footer-p">University Search Tool</p>
+                    </div>
+                        <div class="about-us">
+                      <h2>About Us</h2>
+                      <p class="footer-p">Our Mission</p>
+                      <p class="footer-p">Our Approach</p>
+                      <p class="footer-p">Our Team</p>
+                      <p class="footer-p">our Results</p>
+                    </div>
+                  </div>
+                  <div class="email-subscribe">
+                    <p class="enter-email">Enter your email here</p>
+                    <button class="subscribe-button">Subscribe
+                      <img style="padding-left: 0.3rem;" src="images\Next-arrow.png" alt=" next arrow">
+                    </button>
+                  </div>
+                  
+                </div>
+                
+              </div>
+         </div>
+</body>
+</html>
